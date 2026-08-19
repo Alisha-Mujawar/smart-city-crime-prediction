@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SmartCity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-brand">
+                <i class="fas fa-city"></i>
+                <h1>SmartCity</h1>
+                <p>Crime Prediction System</p>
+            </div>
+            <div class="auth-features">
+                <div class="auth-feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Secure & Reliable</p>
+                </div>
+                <div class="auth-feature">
+                    <i class="fas fa-bolt"></i>
+                    <p>Real-time Processing</p>
+                </div>
+                <div class="auth-feature">
+                    <i class="fas fa-chart-bar"></i>
+                    <p>Advanced Analytics</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="auth-right">
+            <div class="auth-form-container">
+                <h2 id="auth-title">Welcome Back</h2>
+                <p id="auth-subtitle">Login to your account</p>
+                
+                <div class="auth-tabs">
+                    <button type="button" class="tab-btn active" data-role="citizen" onclick="switchRole('citizen')">Citizen</button>
+                    <button type="button" class="tab-btn" data-role="admin" onclick="switchRole('admin')">Admin</button>
+                </div>
+                
+                <div id="error-message" class="error-message" style="display: none;"></div>
+                
+                <form id="authForm">
+                    <div class="form-group" id="nameGroup" style="display: none;">
+                        <label for="name">Full Name:</label>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" placeholder="Enter your full name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" required placeholder="Enter your email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" id="locationGroup" style="display: none;">
+                        <label for="location">Location:</label>
+                        <div class="input-group">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <select id="location">
+                                <option value="">Select your location</option>
+                                <option value="north">North Zone</option>
+                                <option value="south">South Zone</option>
+                                <option value="east">East Zone</option>
+                                <option value="west">West Zone</option>
+                                <option value="central">Central Zone</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" required placeholder="Enter your password">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" id="phoneGroup" style="display: none;">
+                        <label for="phone">Phone (Optional):</label>
+                        <div class="input-group">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn" id="authBtn">
+                        <span id="btnText">Login</span>
+                    </button>
+                </form>
+                
+                <p class="auth-switch">
+                    <span id="switchText">Don't have an account?</span>
+                    <a href="#" id="switchLink" onclick="toggleAuthMode(event)">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City - Crime Prediction System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="landing-page">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-city"></i>
+                    <span>SmartCity</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <button class="btn btn-outline" onclick="showLogin()">Login</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Smart City Crime Prediction System</h1>
+                    <p>Empowering citizens and authorities with AI-powered crime categorization for faster response and safer communities.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="window.location.href='/citizen'">
+                            <i class="fas fa-comment-dots"></i> Submit Complaint
+                        </button>
+                        <button class="btn btn-secondary" onclick="window.location.href='/admin'">
+                            <i class="fas fa-shield-alt"></i> Admin Dashboard
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://img.freepik.com/free-vector/smart-city-concept_23-2148524103.jpg" alt="Smart City">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI-Powered Classification</h3>
+                    <p>Advanced Naive Bayes algorithm automatically categorizes complaints</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Real-Time Processing</h3>
+                    <p>Instant crime category prediction for faster response</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Comprehensive insights for city authorities</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure System</h3>
+                    <p>Protected citizen data and secure admin access</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>98.5%</h3>
+                    <p>Model Accuracy</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Available</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Crime Categories</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Real-time</h3>
+                    <p>Processing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SmartCity</h3>
+                    <p>Making cities safer with AI</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> support@smartcity.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SmartCity. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function showLogin() {
+            window.location.href = '/admin';
+        }
+    </script>
+</body>
+</html>

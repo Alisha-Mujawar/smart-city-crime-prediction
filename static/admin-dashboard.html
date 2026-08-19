@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - SmartCity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/css/admin-dashboard.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Admin Panel</h2>
+            </div>
+            
+            <div class="admin-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="admin-location">North Zone</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-section="overview">
+                    <i class="fas fa-dashboard"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#" class="nav-item" data-section="complaints">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Complaints</span>
+                    <span class="badge" id="pending-count">0</span>
+                </a>
+                <a href="#" class="nav-item" data-section="analytics">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="#" class="nav-item" data-section="predict">
+                    <i class="fas fa-brain"></i>
+                    <span>Predict Crime</span>
+                </a>
+                <a href="#" class="nav-item" data-section="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <button onclick="logout()" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="top-bar-left">
+                    <button class="menu-toggle" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 id="page-title">Overview</h1>
+                </div>
+                <div class="top-bar-right">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search complaints..." id="search-input">
+                    </div>
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">5</span>
+                    </div>
+                    <div class="admin-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Admin&background=1a237e&color=fff" alt="Admin">
+                        <div class="admin-info">
+                            <span id="admin-name">Admin</span>
+                            <small id="admin-role">Zone Administrator</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Overview Section -->
+            <section id="overview-section" class="section active">
+                <div class="welcome-banner">
+                    <div class="welcome-text">
+                        <h2>Zone Overview</h2>
+                        <p>Real-time crime statistics for your area</p>
+                    </div>
+                    <div class="date-display" id="current-date"></div>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #e3f2fd; color: #1976d2;">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="total-complaints">0</h3>
+                            <p>Total Complaints</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #fff3e0; color: #ff9800;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="pending-complaints">0</h3>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #e8f5e9; color: #4caf50;">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="resolved-complaints">0</h3>
+                            <p>Resolved</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #fce4ec; color: #e91e63;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="critical-complaints">0</h3>
+                            <p>Critical</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button class="action-btn" onclick="showSection('predict')">
+                        <i class="fas fa-brain"></i>
+                        <span>Predict Crime</span>
+                    </button>
+                    <button class="action-btn" onclick="showSection('analytics')">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>View Analytics</span>
+                    </button>
+                    <button class="action-btn" onclick="showSection('complaints')">
+                        <i class="fas fa-list"></i>
+                        <span>All Complaints</span>
+                    </button>
+                </div>
+            </section>
+            
+            <!-- Complaints Section -->
+            <section id="complaints-section" class="section">
+                <div class="section-header">
+                    <h2>Complaints Management</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="pending">Pending</button>
+                        <button class="filter-btn" data-filter="in_progress">In Progress</button>
+                        <button class="filter-btn" data-filter="resolved">Resolved</button>
+                    </div>
+                </div>
+                
+                <div class="complaints-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Complaint</th>
+                                <th>Citizen</th>
+                                <th>Location</th>
+                                <th>Category</th>
+                                <th>Confidence</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="complaints-body">
+                            <!-- Dynamically loaded -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Analytics Section -->
+            <section id="analytics-section" class="section">
+                <div class="section-header">
+                    <h2>Crime Analytics</h2>
+                    <select id="month-select" onchange="loadAnalytics()">
+                        <option value="current">Current Month</option>
+                        <option value="last">Last Month</option>
+                        <option value="last3">Last 3 Months</option>
+                    </select>
+                </div>
+                
+                <div class="analytics-grid">
+                    <div class="chart-card">
+                        <h3>Crime Category Distribution</h3>
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Monthly Crime Trends</h3>
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Crime Ratio by Category</h3>
+                        <canvas id="ratioChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Status Distribution</h3>
+                        <canvas id="statusChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Predict Crime Section -->
+            <section id="predict-section" class="section">
+                <div class="predict-container">
+                    <div class="predict-form">
+                        <h2>Predict Crime Category</h2>
+                        <p>Enter complaint text to predict the crime category</p>
+                        
+                        <form id="predict-form">
+                            <div class="form-group">
+                                <label for="predict-text">Complaint Text:</label>
+                                <textarea id="predict-text" rows="6" required 
+                                    placeholder="Enter complaint description..."></textarea>
+                            </div>
+                            <button type="submit" class="predict-btn">
+                                <i class="fas fa-brain"></i> Predict Crime
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div id="prediction-result" class="prediction-result" style="display: none;">
+                        <h3>Prediction Result</h3>
+                        <div class="result-card">
+                            <div class="result-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 id="predicted-category">Category</h4>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidence-fill"></div>
+                            </div>
+                            <p id="confidence-text">Confidence: 0%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Settings Section -->
+            <section id="settings-section" class="section">
+                <h2>Admin Settings</h2>
+                <div class="settings-container">
+                    <div class="setting-card">
+                        <h3>Profile Settings</h3>
+                        <form id="settings-form">
+                            <div class="form-group">
+                                <label for="admin-fullname">Full Name:</label>
+                                <input type="text" id="admin-fullname" value="Zone Administrator">
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-email">Email:</label>
+                                <input type="email" id="admin-email" value="admin@smartcity.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-zone">Zone:</label>
+                                <select id="admin-zone">
+                                    <option value="north">North Zone</option>
+                                    <option value="south">South Zone</option>
+                                    <option value="east">East Zone</option>
+                                    <option value="west">West Zone</option>
+                                    <option value="central">Central Zone</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="save-btn">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="/static/js/admin-dashboard.js"></script>
+</body>
+</html>

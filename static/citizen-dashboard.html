@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Dashboard - SmartCity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/citizen-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-city"></i>
+                <h2>SmartCity</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-section="dashboard">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-section="complaints">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>My Complaints</span>
+                </a>
+                <a href="#" class="nav-item" data-section="new-complaint">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>New Complaint</span>
+                </a>
+                <a href="#" class="nav-item" data-section="profile">
+                    <i class="fas fa-user"></i>
+                    <span>My Profile</span>
+                </a>
+                <a href="#" class="nav-item" data-section="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <button onclick="logout()" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="top-bar-left">
+                    <button class="menu-toggle" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 id="page-title">Dashboard</h1>
+                </div>
+                <div class="top-bar-right">
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="user-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Citizen&background=1a237e&color=fff" alt="User">
+                        <span id="user-name">Citizen</span>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Dashboard Section -->
+            <section id="dashboard-section" class="section active">
+                <div class="welcome-banner">
+                    <div class="welcome-text">
+                        <h2>Welcome back, Citizen! 👋</h2>
+                        <p>Here's what's happening in your area</p>
+                    </div>
+                    <button class="btn-primary" onclick="showSection('new-complaint')">
+                        <i class="fas fa-plus"></i> New Complaint
+                    </button>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #e3f2fd; color: #1976d2;">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="total-my-complaints">0</h3>
+                            <p>Total Complaints</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #fff3e0; color: #ff9800;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="pending-my-complaints">0</h3>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #e8f5e9; color: #4caf50;">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="resolved-my-complaints">0</h3>
+                            <p>Resolved</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-complaints">
+                    <h3>Recent Complaints</h3>
+                    <div id="recent-complaints-list">
+                        <!-- Dynamically loaded -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- My Complaints Section -->
+            <section id="complaints-section" class="section">
+                <h2>My Complaints</h2>
+                <div class="complaints-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Complaint</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="my-complaints-body">
+                            <!-- Dynamically loaded -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- New Complaint Section -->
+            <section id="new-complaint-section" class="section">
+                <h2>Submit New Complaint</h2>
+                <div class="complaint-form-container">
+                    <form id="complaint-form">
+                        <div class="form-group">
+                            <label for="complaint-text">Complaint Description:</label>
+                            <textarea id="complaint-text" rows="5" required 
+                                placeholder="Describe the incident in detail..."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="citizen-name">Your Name:</label>
+                                <input type="text" id="citizen-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="citizen-location">Location:</label>
+                                <select id="citizen-location" required>
+                                    <option value="">Select location</option>
+                                    <option value="north">North Zone</option>
+                                    <option value="south">South Zone</option>
+                                    <option value="east">East Zone</option>
+                                    <option value="west">West Zone</option>
+                                    <option value="central">Central Zone</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Submit Complaint
+                        </button>
+                    </form>
+                </div>
+            </section>
+            
+            <!-- Profile Section -->
+            <section id="profile-section" class="section">
+                <h2>My Profile</h2>
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <img src="https://ui-avatars.com/api/?name=Citizen&background=1a237e&color=fff&size=100" alt="Profile">
+                        <div class="profile-info">
+                            <h3 id="profile-name">Citizen Name</h3>
+                            <p id="profile-email">citizen@email.com</p>
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <label>Phone:</label>
+                            <span id="profile-phone">+1234567890</span>
+                        </div>
+                        <div class="detail-item">
+                            <label>Location:</label>
+                            <span id="profile-location">North Zone</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Settings Section -->
+            <section id="settings-section" class="section">
+                <h2>Settings</h2>
+                <div class="settings-container">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Notifications</h3>
+                            <p>Receive email notifications for complaint updates</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Two-Factor Authentication</h3>
+                            <p>Add extra security to your account</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="/static/js/citizen-dashboard.js"></script>
+</body>
+</html>

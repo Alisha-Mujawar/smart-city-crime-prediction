@@ -1,0 +1,1001 @@
+Complaint_Text,Time,Location,Keywords,Previous_History,Incident_Type
+My bike was stolen from the parking area,Morning,Office,my bike was,Yes,Theft
+Someone stole my mobile phone in the market,Afternoon,Highway,someone stole my,Yes,Theft
+Vehicle theft outside office,Night,Market,vehicle theft outside,Yes,Theft
+My bike was stolen from the parking area,Afternoon,School,my bike was,Yes,Theft
+Vehicle theft outside office,Afternoon,Railway Station,vehicle theft outside,Yes,Theft
+Wallet stolen near bus stand,Evening,Market,wallet stolen near,Yes,Theft
+Wallet stolen near bus stand,Evening,Office,wallet stolen near,Yes,Theft
+Someone stole my mobile phone in the market,Evening,Highway,someone stole my,Yes,Theft
+Wallet stolen near bus stand,Morning,Bank,wallet stolen near,No,Theft
+Vehicle theft outside office,Evening,Market,vehicle theft outside,No,Theft
+Vehicle theft outside office,Morning,Railway Station,vehicle theft outside,Yes,Theft
+Vehicle theft outside office,Evening,Bank,vehicle theft outside,Yes,Theft
+My bike was stolen from the parking area,Morning,School,my bike was,No,Theft
+My bike was stolen from the parking area,Afternoon,Highway,my bike was,No,Theft
+House burglary reported last night,Night,Bank,house burglary reported,Yes,Theft
+House burglary reported last night,Evening,School,house burglary reported,No,Theft
+My bike was stolen from the parking area,Afternoon,School,my bike was,Yes,Theft
+Wallet stolen near bus stand,Night,Office,wallet stolen near,Yes,Theft
+House burglary reported last night,Morning,School,house burglary reported,Yes,Theft
+House burglary reported last night,Night,Office,house burglary reported,Yes,Theft
+Someone stole my mobile phone in the market,Evening,School,someone stole my,No,Theft
+Wallet stolen near bus stand,Night,Residential,wallet stolen near,No,Theft
+Someone stole my mobile phone in the market,Afternoon,Office,someone stole my,No,Theft
+Vehicle theft outside office,Night,Bank,vehicle theft outside,Yes,Theft
+Someone stole my mobile phone in the market,Night,Highway,someone stole my,Yes,Theft
+My bike was stolen from the parking area,Afternoon,Residential,my bike was,No,Theft
+Vehicle theft outside office,Morning,Railway Station,vehicle theft outside,No,Theft
+Vehicle theft outside office,Night,Office,vehicle theft outside,Yes,Theft
+My bike was stolen from the parking area,Evening,Bank,my bike was,Yes,Theft
+House burglary reported last night,Night,Residential,house burglary reported,No,Theft
+My bike was stolen from the parking area,Evening,Residential,my bike was,Yes,Theft
+House burglary reported last night,Afternoon,Residential,house burglary reported,No,Theft
+Someone stole my mobile phone in the market,Morning,Bank,someone stole my,No,Theft
+My bike was stolen from the parking area,Morning,Bank,my bike was,No,Theft
+Someone stole my mobile phone in the market,Morning,School,someone stole my,Yes,Theft
+My bike was stolen from the parking area,Night,Highway,my bike was,Yes,Theft
+Someone stole my mobile phone in the market,Night,Residential,someone stole my,No,Theft
+Vehicle theft outside office,Night,School,vehicle theft outside,Yes,Theft
+House burglary reported last night,Night,Bank,house burglary reported,No,Theft
+Vehicle theft outside office,Night,Highway,vehicle theft outside,Yes,Theft
+Someone stole my mobile phone in the market,Morning,Bank,someone stole my,Yes,Theft
+Vehicle theft outside office,Afternoon,School,vehicle theft outside,Yes,Theft
+My bike was stolen from the parking area,Morning,School,my bike was,Yes,Theft
+My bike was stolen from the parking area,Evening,Highway,my bike was,Yes,Theft
+House burglary reported last night,Night,School,house burglary reported,Yes,Theft
+Vehicle theft outside office,Night,School,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Afternoon,Highway,wallet stolen near,Yes,Theft
+Wallet stolen near bus stand,Evening,Railway Station,wallet stolen near,No,Theft
+Wallet stolen near bus stand,Morning,Highway,wallet stolen near,Yes,Theft
+Wallet stolen near bus stand,Evening,Highway,wallet stolen near,Yes,Theft
+Someone stole my mobile phone in the market,Afternoon,Hospital,someone stole my,Yes,Theft
+Wallet stolen near bus stand,Afternoon,Office,wallet stolen near,No,Theft
+Someone stole my mobile phone in the market,Morning,Hospital,someone stole my,Yes,Theft
+My bike was stolen from the parking area,Morning,Highway,my bike was,Yes,Theft
+Someone stole my mobile phone in the market,Night,Hospital,someone stole my,No,Theft
+Someone stole my mobile phone in the market,Night,Market,someone stole my,Yes,Theft
+Wallet stolen near bus stand,Morning,Railway Station,wallet stolen near,No,Theft
+Wallet stolen near bus stand,Evening,Railway Station,wallet stolen near,No,Theft
+Someone stole my mobile phone in the market,Afternoon,Office,someone stole my,Yes,Theft
+My bike was stolen from the parking area,Morning,Bank,my bike was,Yes,Theft
+My bike was stolen from the parking area,Night,Residential,my bike was,Yes,Theft
+Vehicle theft outside office,Morning,Residential,vehicle theft outside,Yes,Theft
+Vehicle theft outside office,Morning,School,vehicle theft outside,No,Theft
+My bike was stolen from the parking area,Afternoon,Market,my bike was,Yes,Theft
+Wallet stolen near bus stand,Evening,Office,wallet stolen near,Yes,Theft
+House burglary reported last night,Afternoon,Office,house burglary reported,No,Theft
+Someone stole my mobile phone in the market,Evening,Hospital,someone stole my,No,Theft
+My bike was stolen from the parking area,Morning,Hospital,my bike was,Yes,Theft
+My bike was stolen from the parking area,Afternoon,Office,my bike was,Yes,Theft
+House burglary reported last night,Morning,School,house burglary reported,No,Theft
+House burglary reported last night,Afternoon,Hospital,house burglary reported,No,Theft
+Vehicle theft outside office,Morning,Office,vehicle theft outside,Yes,Theft
+Someone stole my mobile phone in the market,Evening,Highway,someone stole my,Yes,Theft
+Vehicle theft outside office,Afternoon,Office,vehicle theft outside,No,Theft
+Vehicle theft outside office,Afternoon,Bank,vehicle theft outside,Yes,Theft
+House burglary reported last night,Night,Office,house burglary reported,Yes,Theft
+My bike was stolen from the parking area,Night,Office,my bike was,Yes,Theft
+My bike was stolen from the parking area,Evening,Residential,my bike was,No,Theft
+Someone stole my mobile phone in the market,Night,Railway Station,someone stole my,Yes,Theft
+My bike was stolen from the parking area,Morning,Residential,my bike was,Yes,Theft
+House burglary reported last night,Afternoon,Railway Station,house burglary reported,Yes,Theft
+My bike was stolen from the parking area,Evening,Bank,my bike was,Yes,Theft
+House burglary reported last night,Afternoon,School,house burglary reported,Yes,Theft
+House burglary reported last night,Night,Residential,house burglary reported,Yes,Theft
+Someone stole my mobile phone in the market,Afternoon,Railway Station,someone stole my,Yes,Theft
+Someone stole my mobile phone in the market,Evening,Railway Station,someone stole my,Yes,Theft
+House burglary reported last night,Afternoon,Highway,house burglary reported,No,Theft
+My bike was stolen from the parking area,Night,School,my bike was,Yes,Theft
+Wallet stolen near bus stand,Evening,Office,wallet stolen near,Yes,Theft
+Someone stole my mobile phone in the market,Morning,School,someone stole my,No,Theft
+House burglary reported last night,Evening,Highway,house burglary reported,No,Theft
+House burglary reported last night,Night,Bank,house burglary reported,Yes,Theft
+My bike was stolen from the parking area,Evening,Residential,my bike was,No,Theft
+My bike was stolen from the parking area,Morning,Railway Station,my bike was,No,Theft
+House burglary reported last night,Night,Highway,house burglary reported,No,Theft
+Vehicle theft outside office,Afternoon,Office,vehicle theft outside,Yes,Theft
+Wallet stolen near bus stand,Morning,School,wallet stolen near,No,Theft
+Wallet stolen near bus stand,Morning,Bank,wallet stolen near,No,Theft
+My bike was stolen from the parking area,Evening,Office,my bike was,No,Theft
+House burglary reported last night,Night,Office,house burglary reported,Yes,Theft
+Someone stole my mobile phone in the market,Night,Railway Station,someone stole my,Yes,Theft
+Vehicle theft outside office,Evening,Railway Station,vehicle theft outside,Yes,Theft
+House burglary reported last night,Evening,School,house burglary reported,No,Theft
+Vehicle theft outside office,Evening,Hospital,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Afternoon,Hospital,wallet stolen near,Yes,Theft
+My bike was stolen from the parking area,Evening,Bank,my bike was,Yes,Theft
+Someone stole my mobile phone in the market,Evening,School,someone stole my,Yes,Theft
+Someone stole my mobile phone in the market,Morning,Market,someone stole my,Yes,Theft
+Wallet stolen near bus stand,Morning,Hospital,wallet stolen near,No,Theft
+Vehicle theft outside office,Afternoon,Railway Station,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Afternoon,Residential,wallet stolen near,Yes,Theft
+My bike was stolen from the parking area,Night,School,my bike was,Yes,Theft
+Vehicle theft outside office,Night,Market,vehicle theft outside,Yes,Theft
+My bike was stolen from the parking area,Night,Residential,my bike was,No,Theft
+Vehicle theft outside office,Evening,Hospital,vehicle theft outside,No,Theft
+Vehicle theft outside office,Night,Residential,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Evening,School,wallet stolen near,No,Theft
+Vehicle theft outside office,Night,School,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Morning,Office,wallet stolen near,Yes,Theft
+House burglary reported last night,Evening,Bank,house burglary reported,Yes,Theft
+Someone stole my mobile phone in the market,Afternoon,School,someone stole my,No,Theft
+Someone stole my mobile phone in the market,Afternoon,Highway,someone stole my,No,Theft
+Wallet stolen near bus stand,Evening,Hospital,wallet stolen near,No,Theft
+My bike was stolen from the parking area,Afternoon,Railway Station,my bike was,No,Theft
+Vehicle theft outside office,Morning,Railway Station,vehicle theft outside,No,Theft
+My bike was stolen from the parking area,Evening,Office,my bike was,No,Theft
+Wallet stolen near bus stand,Afternoon,Hospital,wallet stolen near,Yes,Theft
+House burglary reported last night,Night,Hospital,house burglary reported,Yes,Theft
+Wallet stolen near bus stand,Evening,Railway Station,wallet stolen near,Yes,Theft
+Wallet stolen near bus stand,Afternoon,Market,wallet stolen near,No,Theft
+Vehicle theft outside office,Morning,Highway,vehicle theft outside,No,Theft
+Someone stole my mobile phone in the market,Night,Residential,someone stole my,Yes,Theft
+House burglary reported last night,Night,Bank,house burglary reported,Yes,Theft
+Wallet stolen near bus stand,Evening,Bank,wallet stolen near,No,Theft
+House burglary reported last night,Night,Office,house burglary reported,Yes,Theft
+Wallet stolen near bus stand,Morning,Market,wallet stolen near,No,Theft
+Someone stole my mobile phone in the market,Morning,Market,someone stole my,Yes,Theft
+Someone stole my mobile phone in the market,Afternoon,Market,someone stole my,Yes,Theft
+Someone stole my mobile phone in the market,Afternoon,Hospital,someone stole my,Yes,Theft
+Vehicle theft outside office,Afternoon,Hospital,vehicle theft outside,No,Theft
+House burglary reported last night,Afternoon,Highway,house burglary reported,Yes,Theft
+House burglary reported last night,Morning,Market,house burglary reported,No,Theft
+Vehicle theft outside office,Night,Railway Station,vehicle theft outside,Yes,Theft
+My bike was stolen from the parking area,Afternoon,Highway,my bike was,No,Theft
+Vehicle theft outside office,Morning,Market,vehicle theft outside,No,Theft
+Vehicle theft outside office,Night,Bank,vehicle theft outside,Yes,Theft
+Vehicle theft outside office,Evening,Market,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Morning,Railway Station,wallet stolen near,No,Theft
+Wallet stolen near bus stand,Afternoon,Railway Station,wallet stolen near,Yes,Theft
+Vehicle theft outside office,Evening,Hospital,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Evening,Bank,wallet stolen near,Yes,Theft
+My bike was stolen from the parking area,Evening,Hospital,my bike was,Yes,Theft
+Wallet stolen near bus stand,Night,Bank,wallet stolen near,Yes,Theft
+Wallet stolen near bus stand,Evening,Residential,wallet stolen near,No,Theft
+Someone stole my mobile phone in the market,Evening,Office,someone stole my,No,Theft
+House burglary reported last night,Evening,Market,house burglary reported,Yes,Theft
+My bike was stolen from the parking area,Afternoon,Railway Station,my bike was,No,Theft
+Vehicle theft outside office,Afternoon,Hospital,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Morning,Highway,wallet stolen near,No,Theft
+Someone stole my mobile phone in the market,Night,School,someone stole my,No,Theft
+Vehicle theft outside office,Evening,Hospital,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Evening,Bank,wallet stolen near,No,Theft
+House burglary reported last night,Evening,Office,house burglary reported,Yes,Theft
+My bike was stolen from the parking area,Afternoon,Bank,my bike was,Yes,Theft
+Vehicle theft outside office,Afternoon,School,vehicle theft outside,Yes,Theft
+Wallet stolen near bus stand,Evening,Office,wallet stolen near,Yes,Theft
+Someone stole my mobile phone in the market,Evening,School,someone stole my,No,Theft
+Someone stole my mobile phone in the market,Evening,Market,someone stole my,Yes,Theft
+House burglary reported last night,Morning,Market,house burglary reported,No,Theft
+Someone stole my mobile phone in the market,Night,Highway,someone stole my,Yes,Theft
+Vehicle theft outside office,Evening,Hospital,vehicle theft outside,No,Theft
+Wallet stolen near bus stand,Evening,Residential,wallet stolen near,Yes,Theft
+House burglary reported last night,Night,Highway,house burglary reported,Yes,Theft
+Wallet stolen near bus stand,Night,Highway,wallet stolen near,Yes,Theft
+Someone stole my mobile phone in the market,Afternoon,Office,someone stole my,Yes,Theft
+Someone stole my mobile phone in the market,Morning,Railway Station,someone stole my,Yes,Theft
+Vehicle theft outside office,Night,Hospital,vehicle theft outside,No,Theft
+House burglary reported last night,Night,Office,house burglary reported,Yes,Theft
+Vehicle theft outside office,Morning,School,vehicle theft outside,Yes,Theft
+House burglary reported last night,Morning,Residential,house burglary reported,Yes,Theft
+Someone stole my mobile phone in the market,Morning,Residential,someone stole my,Yes,Theft
+Wallet stolen near bus stand,Night,Hospital,wallet stolen near,No,Theft
+My bike was stolen from the parking area,Afternoon,Office,my bike was,No,Theft
+Wallet stolen near bus stand,Morning,School,wallet stolen near,No,Theft
+Vehicle theft outside office,Afternoon,Railway Station,vehicle theft outside,Yes,Theft
+Vehicle theft outside office,Afternoon,Residential,vehicle theft outside,No,Theft
+Someone stole my mobile phone in the market,Morning,Market,someone stole my,Yes,Theft
+House burglary reported last night,Evening,Hospital,house burglary reported,Yes,Theft
+Wallet stolen near bus stand,Evening,Railway Station,wallet stolen near,No,Theft
+Vehicle theft outside office,Night,Hospital,vehicle theft outside,Yes,Theft
+Vehicle theft outside office,Morning,Railway Station,vehicle theft outside,No,Theft
+Vehicle theft outside office,Evening,Market,vehicle theft outside,Yes,Theft
+Someone stole my mobile phone in the market,Morning,Office,someone stole my,Yes,Theft
+Someone stole my mobile phone in the market,Night,Hospital,someone stole my,No,Theft
+Someone stole my mobile phone in the market,Night,Hospital,someone stole my,Yes,Theft
+Wallet stolen near bus stand,Evening,Railway Station,wallet stolen near,No,Theft
+House burglary reported last night,Morning,Residential,house burglary reported,No,Theft
+Wallet stolen near bus stand,Night,Office,wallet stolen near,No,Theft
+Vehicle theft outside office,Morning,Hospital,vehicle theft outside,Yes,Theft
+House burglary reported last night,Evening,Bank,house burglary reported,Yes,Theft
+Violent attack near school,Morning,Hospital,violent attack near,No,Assault
+A person attacked another with a stick,Afternoon,Bank,a person attacked,No,Assault
+Violent attack near school,Morning,School,violent attack near,No,Assault
+Man beaten by unknown people,Afternoon,Office,man beaten by,No,Assault
+Violent attack near school,Morning,Market,violent attack near,Yes,Assault
+Physical fight in the market,Evening,Market,physical fight in,No,Assault
+A person attacked another with a stick,Afternoon,Highway,a person attacked,No,Assault
+A person attacked another with a stick,Afternoon,Hospital,a person attacked,No,Assault
+Man beaten by unknown people,Evening,Railway Station,man beaten by,No,Assault
+Violent attack near school,Afternoon,Hospital,violent attack near,Yes,Assault
+Violent attack near school,Afternoon,Residential,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Night,Bank,someone assaulted a,No,Assault
+A person attacked another with a stick,Evening,Office,a person attacked,No,Assault
+Physical fight in the market,Night,Hospital,physical fight in,No,Assault
+Someone assaulted a pedestrian,Night,Hospital,someone assaulted a,No,Assault
+Physical fight in the market,Afternoon,Railway Station,physical fight in,Yes,Assault
+Violent attack near school,Morning,Bank,violent attack near,No,Assault
+Violent attack near school,Night,Residential,violent attack near,No,Assault
+A person attacked another with a stick,Afternoon,Bank,a person attacked,Yes,Assault
+Violent attack near school,Morning,Hospital,violent attack near,Yes,Assault
+Physical fight in the market,Night,Residential,physical fight in,Yes,Assault
+Violent attack near school,Evening,Bank,violent attack near,No,Assault
+A person attacked another with a stick,Evening,Railway Station,a person attacked,No,Assault
+Violent attack near school,Morning,Highway,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Highway,someone assaulted a,No,Assault
+A person attacked another with a stick,Morning,Hospital,a person attacked,Yes,Assault
+Someone assaulted a pedestrian,Morning,Market,someone assaulted a,No,Assault
+A person attacked another with a stick,Evening,Bank,a person attacked,No,Assault
+Violent attack near school,Afternoon,School,violent attack near,No,Assault
+Man beaten by unknown people,Afternoon,Residential,man beaten by,Yes,Assault
+A person attacked another with a stick,Night,School,a person attacked,No,Assault
+Man beaten by unknown people,Afternoon,School,man beaten by,No,Assault
+Someone assaulted a pedestrian,Night,Office,someone assaulted a,Yes,Assault
+Violent attack near school,Evening,Residential,violent attack near,Yes,Assault
+Violent attack near school,Evening,Office,violent attack near,No,Assault
+Someone assaulted a pedestrian,Night,Office,someone assaulted a,Yes,Assault
+Violent attack near school,Night,Highway,violent attack near,Yes,Assault
+Violent attack near school,Evening,Office,violent attack near,No,Assault
+A person attacked another with a stick,Night,Office,a person attacked,Yes,Assault
+Man beaten by unknown people,Morning,Hospital,man beaten by,No,Assault
+Physical fight in the market,Evening,School,physical fight in,Yes,Assault
+Man beaten by unknown people,Evening,Residential,man beaten by,Yes,Assault
+A person attacked another with a stick,Evening,Hospital,a person attacked,Yes,Assault
+Man beaten by unknown people,Evening,Residential,man beaten by,Yes,Assault
+Someone assaulted a pedestrian,Evening,Railway Station,someone assaulted a,Yes,Assault
+Physical fight in the market,Afternoon,Bank,physical fight in,No,Assault
+Physical fight in the market,Evening,Hospital,physical fight in,No,Assault
+Someone assaulted a pedestrian,Morning,Hospital,someone assaulted a,Yes,Assault
+Physical fight in the market,Afternoon,Railway Station,physical fight in,No,Assault
+A person attacked another with a stick,Night,Market,a person attacked,No,Assault
+Man beaten by unknown people,Morning,Hospital,man beaten by,No,Assault
+Someone assaulted a pedestrian,Night,Bank,someone assaulted a,Yes,Assault
+Physical fight in the market,Night,Market,physical fight in,No,Assault
+Man beaten by unknown people,Afternoon,Highway,man beaten by,No,Assault
+Someone assaulted a pedestrian,Night,Highway,someone assaulted a,Yes,Assault
+A person attacked another with a stick,Morning,Office,a person attacked,No,Assault
+A person attacked another with a stick,Morning,School,a person attacked,Yes,Assault
+Violent attack near school,Night,Bank,violent attack near,No,Assault
+Man beaten by unknown people,Afternoon,Railway Station,man beaten by,Yes,Assault
+Violent attack near school,Night,Office,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Hospital,someone assaulted a,No,Assault
+Physical fight in the market,Evening,Highway,physical fight in,No,Assault
+Man beaten by unknown people,Evening,Market,man beaten by,No,Assault
+Someone assaulted a pedestrian,Afternoon,Highway,someone assaulted a,No,Assault
+A person attacked another with a stick,Afternoon,Market,a person attacked,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Residential,someone assaulted a,Yes,Assault
+A person attacked another with a stick,Afternoon,School,a person attacked,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Market,someone assaulted a,No,Assault
+Physical fight in the market,Afternoon,Office,physical fight in,Yes,Assault
+A person attacked another with a stick,Morning,Residential,a person attacked,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Bank,someone assaulted a,Yes,Assault
+Physical fight in the market,Evening,Market,physical fight in,Yes,Assault
+Violent attack near school,Morning,Highway,violent attack near,No,Assault
+Violent attack near school,Evening,Highway,violent attack near,No,Assault
+Man beaten by unknown people,Afternoon,Market,man beaten by,No,Assault
+Violent attack near school,Morning,Market,violent attack near,No,Assault
+Violent attack near school,Night,Highway,violent attack near,No,Assault
+Violent attack near school,Morning,Highway,violent attack near,No,Assault
+Man beaten by unknown people,Afternoon,Highway,man beaten by,Yes,Assault
+Someone assaulted a pedestrian,Evening,Railway Station,someone assaulted a,No,Assault
+Violent attack near school,Night,Highway,violent attack near,Yes,Assault
+Man beaten by unknown people,Afternoon,Railway Station,man beaten by,No,Assault
+Physical fight in the market,Night,Bank,physical fight in,No,Assault
+Violent attack near school,Night,Highway,violent attack near,No,Assault
+Violent attack near school,Evening,Office,violent attack near,No,Assault
+Physical fight in the market,Night,Highway,physical fight in,Yes,Assault
+A person attacked another with a stick,Morning,Railway Station,a person attacked,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Market,someone assaulted a,No,Assault
+A person attacked another with a stick,Night,Bank,a person attacked,No,Assault
+A person attacked another with a stick,Evening,Office,a person attacked,No,Assault
+A person attacked another with a stick,Afternoon,Residential,a person attacked,No,Assault
+Physical fight in the market,Morning,Bank,physical fight in,No,Assault
+A person attacked another with a stick,Evening,School,a person attacked,No,Assault
+Man beaten by unknown people,Morning,Office,man beaten by,Yes,Assault
+Physical fight in the market,Evening,Office,physical fight in,No,Assault
+Someone assaulted a pedestrian,Morning,Residential,someone assaulted a,Yes,Assault
+Man beaten by unknown people,Night,Highway,man beaten by,Yes,Assault
+A person attacked another with a stick,Morning,School,a person attacked,No,Assault
+Violent attack near school,Night,Bank,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Evening,Bank,someone assaulted a,Yes,Assault
+A person attacked another with a stick,Afternoon,Residential,a person attacked,Yes,Assault
+A person attacked another with a stick,Evening,Hospital,a person attacked,No,Assault
+Violent attack near school,Night,Railway Station,violent attack near,No,Assault
+Physical fight in the market,Morning,Bank,physical fight in,No,Assault
+A person attacked another with a stick,Evening,Hospital,a person attacked,No,Assault
+A person attacked another with a stick,Afternoon,Railway Station,a person attacked,Yes,Assault
+A person attacked another with a stick,Afternoon,Office,a person attacked,Yes,Assault
+Physical fight in the market,Evening,Office,physical fight in,No,Assault
+A person attacked another with a stick,Morning,Hospital,a person attacked,No,Assault
+Physical fight in the market,Afternoon,Railway Station,physical fight in,Yes,Assault
+Man beaten by unknown people,Evening,Highway,man beaten by,No,Assault
+A person attacked another with a stick,Night,Market,a person attacked,No,Assault
+A person attacked another with a stick,Evening,Railway Station,a person attacked,No,Assault
+Violent attack near school,Evening,Highway,violent attack near,No,Assault
+A person attacked another with a stick,Evening,Residential,a person attacked,No,Assault
+Someone assaulted a pedestrian,Morning,Railway Station,someone assaulted a,Yes,Assault
+Physical fight in the market,Night,Railway Station,physical fight in,Yes,Assault
+Violent attack near school,Evening,Bank,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Highway,someone assaulted a,Yes,Assault
+Man beaten by unknown people,Afternoon,Bank,man beaten by,No,Assault
+Physical fight in the market,Afternoon,Highway,physical fight in,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Residential,someone assaulted a,Yes,Assault
+A person attacked another with a stick,Afternoon,Hospital,a person attacked,No,Assault
+Man beaten by unknown people,Night,Bank,man beaten by,No,Assault
+Physical fight in the market,Night,Highway,physical fight in,No,Assault
+Violent attack near school,Evening,Office,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Morning,Office,someone assaulted a,No,Assault
+Violent attack near school,Morning,Market,violent attack near,No,Assault
+Someone assaulted a pedestrian,Morning,Highway,someone assaulted a,No,Assault
+Violent attack near school,Morning,Hospital,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Night,Residential,someone assaulted a,Yes,Assault
+Violent attack near school,Morning,Bank,violent attack near,Yes,Assault
+Man beaten by unknown people,Afternoon,Market,man beaten by,Yes,Assault
+Violent attack near school,Night,Residential,violent attack near,No,Assault
+Someone assaulted a pedestrian,Evening,Railway Station,someone assaulted a,No,Assault
+Someone assaulted a pedestrian,Morning,Bank,someone assaulted a,Yes,Assault
+Someone assaulted a pedestrian,Morning,Railway Station,someone assaulted a,No,Assault
+Someone assaulted a pedestrian,Afternoon,Bank,someone assaulted a,Yes,Assault
+Man beaten by unknown people,Afternoon,Bank,man beaten by,No,Assault
+Violent attack near school,Afternoon,Highway,violent attack near,No,Assault
+Man beaten by unknown people,Night,Bank,man beaten by,Yes,Assault
+Man beaten by unknown people,Morning,Railway Station,man beaten by,No,Assault
+A person attacked another with a stick,Evening,Office,a person attacked,Yes,Assault
+Physical fight in the market,Evening,Hospital,physical fight in,Yes,Assault
+Physical fight in the market,Afternoon,Residential,physical fight in,Yes,Assault
+Someone assaulted a pedestrian,Morning,Market,someone assaulted a,No,Assault
+Man beaten by unknown people,Afternoon,Railway Station,man beaten by,Yes,Assault
+Physical fight in the market,Afternoon,Residential,physical fight in,No,Assault
+A person attacked another with a stick,Night,Bank,a person attacked,Yes,Assault
+Violent attack near school,Evening,Hospital,violent attack near,Yes,Assault
+Man beaten by unknown people,Afternoon,Office,man beaten by,No,Assault
+Physical fight in the market,Evening,Hospital,physical fight in,No,Assault
+Someone assaulted a pedestrian,Night,Railway Station,someone assaulted a,Yes,Assault
+Physical fight in the market,Afternoon,Office,physical fight in,Yes,Assault
+Violent attack near school,Evening,Highway,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Morning,Residential,someone assaulted a,No,Assault
+Violent attack near school,Afternoon,Railway Station,violent attack near,Yes,Assault
+Physical fight in the market,Night,Bank,physical fight in,Yes,Assault
+Violent attack near school,Morning,Railway Station,violent attack near,No,Assault
+Physical fight in the market,Night,Highway,physical fight in,No,Assault
+Physical fight in the market,Morning,Bank,physical fight in,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Residential,someone assaulted a,Yes,Assault
+Someone assaulted a pedestrian,Night,Residential,someone assaulted a,No,Assault
+Violent attack near school,Morning,Highway,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Afternoon,Residential,someone assaulted a,No,Assault
+A person attacked another with a stick,Evening,School,a person attacked,No,Assault
+A person attacked another with a stick,Morning,School,a person attacked,No,Assault
+Man beaten by unknown people,Night,Highway,man beaten by,Yes,Assault
+Violent attack near school,Morning,School,violent attack near,Yes,Assault
+Someone assaulted a pedestrian,Night,Market,someone assaulted a,No,Assault
+Physical fight in the market,Night,Residential,physical fight in,Yes,Assault
+Man beaten by unknown people,Evening,Highway,man beaten by,Yes,Assault
+Violent attack near school,Night,Market,violent attack near,No,Assault
+Someone assaulted a pedestrian,Evening,Market,someone assaulted a,No,Assault
+A person attacked another with a stick,Evening,School,a person attacked,Yes,Assault
+Man beaten by unknown people,Evening,Residential,man beaten by,Yes,Assault
+Someone assaulted a pedestrian,Evening,Residential,someone assaulted a,No,Assault
+Violent attack near school,Afternoon,Residential,violent attack near,Yes,Assault
+Violent attack near school,Morning,Office,violent attack near,Yes,Assault
+A person attacked another with a stick,Afternoon,Market,a person attacked,No,Assault
+Someone assaulted a pedestrian,Night,Hospital,someone assaulted a,No,Assault
+A person attacked another with a stick,Afternoon,Office,a person attacked,No,Assault
+A person attacked another with a stick,Evening,Office,a person attacked,Yes,Assault
+Someone assaulted a pedestrian,Night,Railway Station,someone assaulted a,No,Assault
+Violent attack near school,Evening,Residential,violent attack near,No,Assault
+Violent attack near school,Evening,Office,violent attack near,Yes,Assault
+Violent attack near school,Morning,Railway Station,violent attack near,Yes,Assault
+Man beaten by unknown people,Evening,Bank,man beaten by,Yes,Assault
+A person attacked another with a stick,Evening,Office,a person attacked,No,Assault
+Violent attack near school,Night,Residential,violent attack near,No,Assault
+Someone assaulted a pedestrian,Night,Market,someone assaulted a,No,Assault
+Man beaten by unknown people,Night,Office,man beaten by,Yes,Assault
+A person attacked another with a stick,Night,Bank,a person attacked,Yes,Assault
+A person attacked another with a stick,Afternoon,Hospital,a person attacked,Yes,Assault
+Physical fight in the market,Morning,School,physical fight in,No,Assault
+Someone assaulted a pedestrian,Night,Market,someone assaulted a,Yes,Assault
+Violent attack near school,Evening,Bank,violent attack near,No,Assault
+A person attacked another with a stick,Afternoon,Bank,a person attacked,No,Assault
+Someone assaulted a pedestrian,Evening,School,someone assaulted a,Yes,Assault
+A person attacked another with a stick,Afternoon,Hospital,a person attacked,No,Assault
+Credit card scam reported,Morning,Office,credit card scam,No,Cyber Crime
+Instagram account hacked,Afternoon,Office,instagram account hacked,No,Cyber Crime
+Received phishing email asking OTP,Morning,Residential,received phishing email,Yes,Cyber Crime
+Instagram account hacked,Afternoon,Hospital,instagram account hacked,Yes,Cyber Crime
+Online fraud through UPI,Evening,Highway,online fraud through,No,Cyber Crime
+Online fraud through UPI,Afternoon,Residential,online fraud through,No,Cyber Crime
+Credit card scam reported,Afternoon,Highway,credit card scam,Yes,Cyber Crime
+Received phishing email asking OTP,Afternoon,Hospital,received phishing email,Yes,Cyber Crime
+Online fraud through UPI,Evening,Hospital,online fraud through,Yes,Cyber Crime
+Credit card scam reported,Morning,Highway,credit card scam,No,Cyber Crime
+Instagram account hacked,Night,Railway Station,instagram account hacked,No,Cyber Crime
+Credit card scam reported,Morning,Residential,credit card scam,No,Cyber Crime
+My bank account was hacked,Night,Hospital,my bank account,No,Cyber Crime
+Received phishing email asking OTP,Afternoon,Residential,received phishing email,No,Cyber Crime
+Credit card scam reported,Morning,Highway,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Afternoon,Residential,online fraud through,No,Cyber Crime
+Received phishing email asking OTP,Evening,Office,received phishing email,Yes,Cyber Crime
+Online fraud through UPI,Afternoon,Office,online fraud through,Yes,Cyber Crime
+Online fraud through UPI,Morning,Residential,online fraud through,Yes,Cyber Crime
+Received phishing email asking OTP,Evening,Market,received phishing email,Yes,Cyber Crime
+My bank account was hacked,Morning,Office,my bank account,Yes,Cyber Crime
+Credit card scam reported,Night,Market,credit card scam,No,Cyber Crime
+Credit card scam reported,Evening,Office,credit card scam,No,Cyber Crime
+Received phishing email asking OTP,Night,Office,received phishing email,No,Cyber Crime
+My bank account was hacked,Morning,Residential,my bank account,No,Cyber Crime
+Instagram account hacked,Night,Hospital,instagram account hacked,Yes,Cyber Crime
+Online fraud through UPI,Afternoon,Bank,online fraud through,No,Cyber Crime
+Online fraud through UPI,Night,Residential,online fraud through,No,Cyber Crime
+Credit card scam reported,Morning,Bank,credit card scam,Yes,Cyber Crime
+Instagram account hacked,Morning,Office,instagram account hacked,No,Cyber Crime
+Received phishing email asking OTP,Afternoon,Highway,received phishing email,Yes,Cyber Crime
+Online fraud through UPI,Night,Railway Station,online fraud through,Yes,Cyber Crime
+Received phishing email asking OTP,Evening,Bank,received phishing email,Yes,Cyber Crime
+Received phishing email asking OTP,Night,Hospital,received phishing email,No,Cyber Crime
+Online fraud through UPI,Night,Market,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Night,School,instagram account hacked,Yes,Cyber Crime
+Credit card scam reported,Evening,Market,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Night,Hospital,online fraud through,No,Cyber Crime
+Credit card scam reported,Morning,Highway,credit card scam,No,Cyber Crime
+Received phishing email asking OTP,Evening,Bank,received phishing email,No,Cyber Crime
+Online fraud through UPI,Morning,Railway Station,online fraud through,Yes,Cyber Crime
+Credit card scam reported,Afternoon,Bank,credit card scam,No,Cyber Crime
+My bank account was hacked,Night,Hospital,my bank account,No,Cyber Crime
+Credit card scam reported,Morning,Residential,credit card scam,Yes,Cyber Crime
+Instagram account hacked,Evening,Bank,instagram account hacked,No,Cyber Crime
+Received phishing email asking OTP,Afternoon,Railway Station,received phishing email,Yes,Cyber Crime
+My bank account was hacked,Morning,Residential,my bank account,No,Cyber Crime
+Instagram account hacked,Night,Residential,instagram account hacked,Yes,Cyber Crime
+Online fraud through UPI,Evening,Residential,online fraud through,No,Cyber Crime
+Credit card scam reported,Evening,Bank,credit card scam,No,Cyber Crime
+Credit card scam reported,Evening,Hospital,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Evening,Highway,online fraud through,No,Cyber Crime
+Credit card scam reported,Evening,Market,credit card scam,No,Cyber Crime
+Online fraud through UPI,Afternoon,Market,online fraud through,No,Cyber Crime
+Received phishing email asking OTP,Night,Residential,received phishing email,Yes,Cyber Crime
+My bank account was hacked,Morning,School,my bank account,Yes,Cyber Crime
+Instagram account hacked,Evening,Railway Station,instagram account hacked,Yes,Cyber Crime
+Instagram account hacked,Afternoon,Railway Station,instagram account hacked,No,Cyber Crime
+My bank account was hacked,Afternoon,School,my bank account,No,Cyber Crime
+Instagram account hacked,Night,Bank,instagram account hacked,Yes,Cyber Crime
+Instagram account hacked,Evening,Bank,instagram account hacked,No,Cyber Crime
+Credit card scam reported,Night,School,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Evening,School,online fraud through,No,Cyber Crime
+Online fraud through UPI,Afternoon,Hospital,online fraud through,No,Cyber Crime
+Instagram account hacked,Evening,Office,instagram account hacked,No,Cyber Crime
+My bank account was hacked,Night,Railway Station,my bank account,No,Cyber Crime
+Received phishing email asking OTP,Evening,Market,received phishing email,No,Cyber Crime
+My bank account was hacked,Evening,Hospital,my bank account,No,Cyber Crime
+Instagram account hacked,Afternoon,School,instagram account hacked,No,Cyber Crime
+Credit card scam reported,Evening,Residential,credit card scam,Yes,Cyber Crime
+Credit card scam reported,Afternoon,School,credit card scam,Yes,Cyber Crime
+Credit card scam reported,Afternoon,School,credit card scam,Yes,Cyber Crime
+My bank account was hacked,Night,Bank,my bank account,No,Cyber Crime
+My bank account was hacked,Afternoon,Market,my bank account,Yes,Cyber Crime
+Instagram account hacked,Night,Hospital,instagram account hacked,Yes,Cyber Crime
+Online fraud through UPI,Evening,Office,online fraud through,Yes,Cyber Crime
+My bank account was hacked,Afternoon,Market,my bank account,Yes,Cyber Crime
+Instagram account hacked,Afternoon,Market,instagram account hacked,No,Cyber Crime
+Instagram account hacked,Afternoon,Office,instagram account hacked,Yes,Cyber Crime
+My bank account was hacked,Evening,Highway,my bank account,No,Cyber Crime
+Online fraud through UPI,Night,Hospital,online fraud through,Yes,Cyber Crime
+Credit card scam reported,Night,Office,credit card scam,Yes,Cyber Crime
+My bank account was hacked,Evening,Residential,my bank account,No,Cyber Crime
+Online fraud through UPI,Afternoon,Market,online fraud through,No,Cyber Crime
+Online fraud through UPI,Afternoon,Residential,online fraud through,No,Cyber Crime
+Instagram account hacked,Evening,Highway,instagram account hacked,No,Cyber Crime
+My bank account was hacked,Afternoon,Residential,my bank account,No,Cyber Crime
+Online fraud through UPI,Afternoon,Market,online fraud through,No,Cyber Crime
+Instagram account hacked,Afternoon,Hospital,instagram account hacked,No,Cyber Crime
+Online fraud through UPI,Evening,Market,online fraud through,No,Cyber Crime
+Online fraud through UPI,Afternoon,Market,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Evening,Residential,instagram account hacked,No,Cyber Crime
+Credit card scam reported,Evening,Highway,credit card scam,No,Cyber Crime
+Online fraud through UPI,Afternoon,School,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Afternoon,Hospital,instagram account hacked,No,Cyber Crime
+Instagram account hacked,Night,School,instagram account hacked,Yes,Cyber Crime
+Credit card scam reported,Morning,Hospital,credit card scam,No,Cyber Crime
+My bank account was hacked,Morning,Market,my bank account,Yes,Cyber Crime
+Credit card scam reported,Afternoon,Residential,credit card scam,No,Cyber Crime
+Credit card scam reported,Night,Highway,credit card scam,Yes,Cyber Crime
+Credit card scam reported,Night,Highway,credit card scam,No,Cyber Crime
+My bank account was hacked,Night,Residential,my bank account,No,Cyber Crime
+Instagram account hacked,Morning,Hospital,instagram account hacked,No,Cyber Crime
+My bank account was hacked,Night,Office,my bank account,Yes,Cyber Crime
+Received phishing email asking OTP,Morning,Market,received phishing email,No,Cyber Crime
+Online fraud through UPI,Morning,Market,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Morning,Office,instagram account hacked,No,Cyber Crime
+Received phishing email asking OTP,Afternoon,Railway Station,received phishing email,No,Cyber Crime
+Instagram account hacked,Night,Railway Station,instagram account hacked,No,Cyber Crime
+My bank account was hacked,Afternoon,Bank,my bank account,Yes,Cyber Crime
+Received phishing email asking OTP,Night,Residential,received phishing email,Yes,Cyber Crime
+My bank account was hacked,Morning,Office,my bank account,No,Cyber Crime
+Credit card scam reported,Night,Railway Station,credit card scam,Yes,Cyber Crime
+Received phishing email asking OTP,Night,Bank,received phishing email,Yes,Cyber Crime
+Online fraud through UPI,Afternoon,Highway,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Morning,School,instagram account hacked,Yes,Cyber Crime
+My bank account was hacked,Morning,Market,my bank account,No,Cyber Crime
+Credit card scam reported,Morning,School,credit card scam,Yes,Cyber Crime
+Instagram account hacked,Night,School,instagram account hacked,Yes,Cyber Crime
+My bank account was hacked,Afternoon,Office,my bank account,Yes,Cyber Crime
+Credit card scam reported,Evening,Bank,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Afternoon,School,online fraud through,No,Cyber Crime
+Online fraud through UPI,Evening,Market,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Night,Market,instagram account hacked,No,Cyber Crime
+Instagram account hacked,Evening,Railway Station,instagram account hacked,No,Cyber Crime
+Received phishing email asking OTP,Evening,Railway Station,received phishing email,Yes,Cyber Crime
+Credit card scam reported,Night,School,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Afternoon,Hospital,online fraud through,Yes,Cyber Crime
+Credit card scam reported,Night,Railway Station,credit card scam,Yes,Cyber Crime
+Instagram account hacked,Afternoon,Office,instagram account hacked,Yes,Cyber Crime
+Online fraud through UPI,Morning,Hospital,online fraud through,No,Cyber Crime
+My bank account was hacked,Afternoon,Market,my bank account,No,Cyber Crime
+Instagram account hacked,Morning,Highway,instagram account hacked,Yes,Cyber Crime
+Credit card scam reported,Afternoon,Hospital,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Evening,Market,online fraud through,Yes,Cyber Crime
+Received phishing email asking OTP,Morning,Hospital,received phishing email,Yes,Cyber Crime
+Credit card scam reported,Afternoon,Railway Station,credit card scam,Yes,Cyber Crime
+Credit card scam reported,Evening,Office,credit card scam,No,Cyber Crime
+Instagram account hacked,Evening,Office,instagram account hacked,No,Cyber Crime
+Online fraud through UPI,Night,Hospital,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Evening,School,instagram account hacked,No,Cyber Crime
+Online fraud through UPI,Night,Market,online fraud through,Yes,Cyber Crime
+Received phishing email asking OTP,Morning,Office,received phishing email,No,Cyber Crime
+Online fraud through UPI,Afternoon,School,online fraud through,No,Cyber Crime
+Received phishing email asking OTP,Night,School,received phishing email,No,Cyber Crime
+Credit card scam reported,Evening,Office,credit card scam,No,Cyber Crime
+Instagram account hacked,Night,Residential,instagram account hacked,No,Cyber Crime
+Received phishing email asking OTP,Afternoon,Hospital,received phishing email,Yes,Cyber Crime
+Credit card scam reported,Morning,Market,credit card scam,Yes,Cyber Crime
+My bank account was hacked,Morning,Railway Station,my bank account,Yes,Cyber Crime
+Received phishing email asking OTP,Morning,Residential,received phishing email,Yes,Cyber Crime
+Received phishing email asking OTP,Night,Bank,received phishing email,Yes,Cyber Crime
+Credit card scam reported,Night,Hospital,credit card scam,Yes,Cyber Crime
+My bank account was hacked,Night,Market,my bank account,Yes,Cyber Crime
+Credit card scam reported,Evening,Office,credit card scam,Yes,Cyber Crime
+Credit card scam reported,Night,Residential,credit card scam,Yes,Cyber Crime
+My bank account was hacked,Afternoon,School,my bank account,Yes,Cyber Crime
+Credit card scam reported,Evening,Bank,credit card scam,No,Cyber Crime
+Instagram account hacked,Morning,Bank,instagram account hacked,No,Cyber Crime
+Instagram account hacked,Afternoon,School,instagram account hacked,No,Cyber Crime
+My bank account was hacked,Morning,Highway,my bank account,No,Cyber Crime
+Instagram account hacked,Night,Hospital,instagram account hacked,Yes,Cyber Crime
+My bank account was hacked,Afternoon,Highway,my bank account,No,Cyber Crime
+Instagram account hacked,Evening,Highway,instagram account hacked,Yes,Cyber Crime
+Received phishing email asking OTP,Afternoon,Hospital,received phishing email,No,Cyber Crime
+My bank account was hacked,Morning,Office,my bank account,Yes,Cyber Crime
+Received phishing email asking OTP,Evening,Market,received phishing email,Yes,Cyber Crime
+Credit card scam reported,Afternoon,Railway Station,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Afternoon,School,online fraud through,No,Cyber Crime
+Credit card scam reported,Evening,Railway Station,credit card scam,Yes,Cyber Crime
+My bank account was hacked,Evening,Market,my bank account,Yes,Cyber Crime
+Instagram account hacked,Afternoon,Highway,instagram account hacked,No,Cyber Crime
+Credit card scam reported,Night,Bank,credit card scam,Yes,Cyber Crime
+Online fraud through UPI,Night,Hospital,online fraud through,Yes,Cyber Crime
+Online fraud through UPI,Night,Railway Station,online fraud through,Yes,Cyber Crime
+Credit card scam reported,Night,Highway,credit card scam,No,Cyber Crime
+Received phishing email asking OTP,Morning,Highway,received phishing email,No,Cyber Crime
+Received phishing email asking OTP,Night,Residential,received phishing email,No,Cyber Crime
+Online fraud through UPI,Evening,Highway,online fraud through,Yes,Cyber Crime
+My bank account was hacked,Evening,Hospital,my bank account,No,Cyber Crime
+Online fraud through UPI,Morning,Residential,online fraud through,Yes,Cyber Crime
+Received phishing email asking OTP,Night,Hospital,received phishing email,No,Cyber Crime
+My bank account was hacked,Morning,Highway,my bank account,No,Cyber Crime
+Credit card scam reported,Morning,Bank,credit card scam,No,Cyber Crime
+My bank account was hacked,Evening,Railway Station,my bank account,No,Cyber Crime
+My bank account was hacked,Afternoon,Residential,my bank account,No,Cyber Crime
+Received phishing email asking OTP,Afternoon,Office,received phishing email,No,Cyber Crime
+Online fraud through UPI,Night,Residential,online fraud through,Yes,Cyber Crime
+Received phishing email asking OTP,Night,Office,received phishing email,No,Cyber Crime
+Online fraud through UPI,Night,Highway,online fraud through,No,Cyber Crime
+Online fraud through UPI,Afternoon,Hospital,online fraud through,Yes,Cyber Crime
+Instagram account hacked,Morning,Residential,instagram account hacked,No,Cyber Crime
+My bank account was hacked,Night,Bank,my bank account,No,Cyber Crime
+Online fraud through UPI,Night,Bank,online fraud through,No,Cyber Crime
+Credit card scam reported,Afternoon,Office,credit card scam,No,Cyber Crime
+Credit card scam reported,Afternoon,Hospital,credit card scam,No,Cyber Crime
+Received phishing email asking OTP,Night,Bank,received phishing email,No,Cyber Crime
+Instagram account hacked,Afternoon,Bank,instagram account hacked,No,Cyber Crime
+Online fraud through UPI,Night,Bank,online fraud through,Yes,Cyber Crime
+Credit card scam reported,Afternoon,Residential,credit card scam,Yes,Cyber Crime
+Bus accident injured passengers,Afternoon,Hospital,bus accident injured,No,Accident
+Road accident on highway,Night,Hospital,road accident on,Yes,Accident
+Truck hit a bike,Afternoon,Office,truck hit a,Yes,Accident
+Bus accident injured passengers,Night,Highway,bus accident injured,No,Accident
+Major collision near bridge,Night,Railway Station,major collision near,No,Accident
+Major collision near bridge,Morning,Bank,major collision near,Yes,Accident
+Road accident on highway,Afternoon,Bank,road accident on,Yes,Accident
+Major collision near bridge,Morning,Railway Station,major collision near,No,Accident
+Bus accident injured passengers,Morning,Market,bus accident injured,Yes,Accident
+Truck hit a bike,Afternoon,School,truck hit a,No,Accident
+Truck hit a bike,Night,Hospital,truck hit a,Yes,Accident
+Truck hit a bike,Morning,Hospital,truck hit a,Yes,Accident
+Truck hit a bike,Night,Highway,truck hit a,Yes,Accident
+Two cars collided near signal,Evening,Office,two cars collided,No,Accident
+Bus accident injured passengers,Afternoon,Hospital,bus accident injured,No,Accident
+Bus accident injured passengers,Morning,Hospital,bus accident injured,No,Accident
+Truck hit a bike,Morning,Office,truck hit a,Yes,Accident
+Road accident on highway,Morning,Bank,road accident on,Yes,Accident
+Two cars collided near signal,Afternoon,Residential,two cars collided,Yes,Accident
+Truck hit a bike,Night,Hospital,truck hit a,Yes,Accident
+Bus accident injured passengers,Afternoon,Residential,bus accident injured,No,Accident
+Bus accident injured passengers,Morning,School,bus accident injured,No,Accident
+Major collision near bridge,Night,Railway Station,major collision near,Yes,Accident
+Two cars collided near signal,Afternoon,Office,two cars collided,Yes,Accident
+Major collision near bridge,Morning,Residential,major collision near,No,Accident
+Truck hit a bike,Afternoon,Hospital,truck hit a,Yes,Accident
+Truck hit a bike,Night,Bank,truck hit a,No,Accident
+Major collision near bridge,Night,Highway,major collision near,No,Accident
+Truck hit a bike,Night,Residential,truck hit a,No,Accident
+Major collision near bridge,Morning,Residential,major collision near,No,Accident
+Road accident on highway,Afternoon,Office,road accident on,Yes,Accident
+Two cars collided near signal,Evening,Residential,two cars collided,No,Accident
+Bus accident injured passengers,Afternoon,Railway Station,bus accident injured,No,Accident
+Two cars collided near signal,Night,Residential,two cars collided,Yes,Accident
+Bus accident injured passengers,Evening,Residential,bus accident injured,Yes,Accident
+Truck hit a bike,Night,Market,truck hit a,No,Accident
+Road accident on highway,Night,Residential,road accident on,Yes,Accident
+Bus accident injured passengers,Night,Railway Station,bus accident injured,No,Accident
+Bus accident injured passengers,Night,Hospital,bus accident injured,Yes,Accident
+Road accident on highway,Morning,School,road accident on,No,Accident
+Road accident on highway,Evening,School,road accident on,No,Accident
+Two cars collided near signal,Night,Hospital,two cars collided,Yes,Accident
+Major collision near bridge,Morning,Office,major collision near,No,Accident
+Major collision near bridge,Morning,Hospital,major collision near,Yes,Accident
+Bus accident injured passengers,Morning,School,bus accident injured,No,Accident
+Road accident on highway,Night,Office,road accident on,No,Accident
+Road accident on highway,Night,Highway,road accident on,Yes,Accident
+Two cars collided near signal,Evening,Railway Station,two cars collided,Yes,Accident
+Major collision near bridge,Afternoon,School,major collision near,Yes,Accident
+Road accident on highway,Evening,Office,road accident on,Yes,Accident
+Truck hit a bike,Evening,Office,truck hit a,No,Accident
+Major collision near bridge,Morning,Residential,major collision near,No,Accident
+Road accident on highway,Evening,Residential,road accident on,Yes,Accident
+Two cars collided near signal,Afternoon,Bank,two cars collided,Yes,Accident
+Bus accident injured passengers,Night,Residential,bus accident injured,No,Accident
+Bus accident injured passengers,Night,Hospital,bus accident injured,Yes,Accident
+Road accident on highway,Night,Office,road accident on,No,Accident
+Bus accident injured passengers,Night,Bank,bus accident injured,Yes,Accident
+Road accident on highway,Night,Bank,road accident on,Yes,Accident
+Major collision near bridge,Night,School,major collision near,No,Accident
+Two cars collided near signal,Night,Office,two cars collided,No,Accident
+Truck hit a bike,Evening,Residential,truck hit a,No,Accident
+Truck hit a bike,Morning,Market,truck hit a,Yes,Accident
+Bus accident injured passengers,Morning,Highway,bus accident injured,Yes,Accident
+Bus accident injured passengers,Night,Market,bus accident injured,No,Accident
+Two cars collided near signal,Afternoon,Office,two cars collided,Yes,Accident
+Truck hit a bike,Morning,Bank,truck hit a,No,Accident
+Road accident on highway,Evening,Residential,road accident on,Yes,Accident
+Bus accident injured passengers,Evening,School,bus accident injured,No,Accident
+Road accident on highway,Morning,Market,road accident on,Yes,Accident
+Bus accident injured passengers,Morning,Residential,bus accident injured,Yes,Accident
+Major collision near bridge,Night,Market,major collision near,Yes,Accident
+Truck hit a bike,Morning,Railway Station,truck hit a,Yes,Accident
+Bus accident injured passengers,Morning,School,bus accident injured,No,Accident
+Road accident on highway,Morning,Highway,road accident on,No,Accident
+Truck hit a bike,Evening,Residential,truck hit a,No,Accident
+Two cars collided near signal,Afternoon,Highway,two cars collided,Yes,Accident
+Major collision near bridge,Afternoon,Hospital,major collision near,No,Accident
+Two cars collided near signal,Afternoon,Railway Station,two cars collided,No,Accident
+Two cars collided near signal,Morning,Highway,two cars collided,Yes,Accident
+Road accident on highway,Night,Bank,road accident on,No,Accident
+Truck hit a bike,Afternoon,School,truck hit a,No,Accident
+Road accident on highway,Afternoon,Office,road accident on,Yes,Accident
+Truck hit a bike,Afternoon,School,truck hit a,No,Accident
+Truck hit a bike,Morning,School,truck hit a,No,Accident
+Bus accident injured passengers,Morning,School,bus accident injured,No,Accident
+Major collision near bridge,Morning,Market,major collision near,No,Accident
+Truck hit a bike,Afternoon,Railway Station,truck hit a,No,Accident
+Truck hit a bike,Afternoon,Hospital,truck hit a,Yes,Accident
+Road accident on highway,Morning,Market,road accident on,No,Accident
+Two cars collided near signal,Morning,Market,two cars collided,No,Accident
+Major collision near bridge,Evening,Railway Station,major collision near,No,Accident
+Bus accident injured passengers,Morning,Residential,bus accident injured,No,Accident
+Road accident on highway,Evening,Highway,road accident on,Yes,Accident
+Two cars collided near signal,Evening,Railway Station,two cars collided,Yes,Accident
+Truck hit a bike,Night,School,truck hit a,Yes,Accident
+Two cars collided near signal,Morning,Railway Station,two cars collided,Yes,Accident
+Bus accident injured passengers,Morning,Office,bus accident injured,Yes,Accident
+Road accident on highway,Morning,Residential,road accident on,Yes,Accident
+Two cars collided near signal,Night,Bank,two cars collided,No,Accident
+Two cars collided near signal,Evening,Residential,two cars collided,No,Accident
+Road accident on highway,Morning,Bank,road accident on,No,Accident
+Truck hit a bike,Morning,Office,truck hit a,Yes,Accident
+Bus accident injured passengers,Night,Bank,bus accident injured,Yes,Accident
+Bus accident injured passengers,Afternoon,Bank,bus accident injured,Yes,Accident
+Truck hit a bike,Morning,Highway,truck hit a,Yes,Accident
+Major collision near bridge,Morning,Market,major collision near,Yes,Accident
+Two cars collided near signal,Morning,Hospital,two cars collided,No,Accident
+Bus accident injured passengers,Afternoon,Residential,bus accident injured,Yes,Accident
+Major collision near bridge,Night,School,major collision near,No,Accident
+Two cars collided near signal,Night,Bank,two cars collided,No,Accident
+Road accident on highway,Evening,Highway,road accident on,Yes,Accident
+Two cars collided near signal,Afternoon,Market,two cars collided,No,Accident
+Road accident on highway,Night,Office,road accident on,No,Accident
+Truck hit a bike,Morning,Hospital,truck hit a,Yes,Accident
+Truck hit a bike,Afternoon,Office,truck hit a,No,Accident
+Major collision near bridge,Afternoon,Hospital,major collision near,No,Accident
+Major collision near bridge,Night,School,major collision near,Yes,Accident
+Two cars collided near signal,Morning,Railway Station,two cars collided,Yes,Accident
+Two cars collided near signal,Evening,Market,two cars collided,No,Accident
+Road accident on highway,Night,Office,road accident on,Yes,Accident
+Two cars collided near signal,Afternoon,Railway Station,two cars collided,No,Accident
+Road accident on highway,Afternoon,Office,road accident on,Yes,Accident
+Road accident on highway,Afternoon,Railway Station,road accident on,No,Accident
+Bus accident injured passengers,Morning,Highway,bus accident injured,Yes,Accident
+Bus accident injured passengers,Morning,Market,bus accident injured,No,Accident
+Two cars collided near signal,Afternoon,Office,two cars collided,No,Accident
+Truck hit a bike,Night,Bank,truck hit a,No,Accident
+Bus accident injured passengers,Evening,School,bus accident injured,Yes,Accident
+Two cars collided near signal,Afternoon,Highway,two cars collided,Yes,Accident
+Road accident on highway,Afternoon,Hospital,road accident on,No,Accident
+Truck hit a bike,Night,Highway,truck hit a,No,Accident
+Two cars collided near signal,Night,Office,two cars collided,No,Accident
+Truck hit a bike,Morning,Highway,truck hit a,Yes,Accident
+Truck hit a bike,Morning,School,truck hit a,No,Accident
+Two cars collided near signal,Morning,School,two cars collided,No,Accident
+Bus accident injured passengers,Morning,Office,bus accident injured,No,Accident
+Two cars collided near signal,Morning,Railway Station,two cars collided,No,Accident
+Major collision near bridge,Afternoon,Highway,major collision near,No,Accident
+Road accident on highway,Afternoon,Highway,road accident on,Yes,Accident
+Road accident on highway,Afternoon,Residential,road accident on,Yes,Accident
+Bus accident injured passengers,Evening,Highway,bus accident injured,No,Accident
+Road accident on highway,Morning,Highway,road accident on,Yes,Accident
+Bus accident injured passengers,Afternoon,Highway,bus accident injured,No,Accident
+Road accident on highway,Morning,Hospital,road accident on,Yes,Accident
+Two cars collided near signal,Night,Railway Station,two cars collided,No,Accident
+Road accident on highway,Night,Railway Station,road accident on,Yes,Accident
+Truck hit a bike,Afternoon,Residential,truck hit a,No,Accident
+Truck hit a bike,Night,Residential,truck hit a,Yes,Accident
+Major collision near bridge,Afternoon,Office,major collision near,No,Accident
+Bus accident injured passengers,Night,Market,bus accident injured,Yes,Accident
+Truck hit a bike,Night,Residential,truck hit a,No,Accident
+Two cars collided near signal,Afternoon,Market,two cars collided,No,Accident
+Truck hit a bike,Night,Hospital,truck hit a,No,Accident
+Major collision near bridge,Evening,Railway Station,major collision near,No,Accident
+Two cars collided near signal,Morning,Bank,two cars collided,Yes,Accident
+Road accident on highway,Evening,Market,road accident on,No,Accident
+Major collision near bridge,Evening,School,major collision near,Yes,Accident
+Road accident on highway,Afternoon,School,road accident on,No,Accident
+Major collision near bridge,Morning,School,major collision near,No,Accident
+Truck hit a bike,Afternoon,Residential,truck hit a,Yes,Accident
+Major collision near bridge,Evening,Bank,major collision near,Yes,Accident
+Truck hit a bike,Afternoon,School,truck hit a,No,Accident
+Major collision near bridge,Evening,Residential,major collision near,No,Accident
+Road accident on highway,Morning,Market,road accident on,Yes,Accident
+Major collision near bridge,Afternoon,Market,major collision near,No,Accident
+Road accident on highway,Evening,School,road accident on,Yes,Accident
+Truck hit a bike,Afternoon,Bank,truck hit a,Yes,Accident
+Road accident on highway,Afternoon,Residential,road accident on,Yes,Accident
+Major collision near bridge,Evening,Highway,major collision near,No,Accident
+Bus accident injured passengers,Morning,Bank,bus accident injured,No,Accident
+Truck hit a bike,Afternoon,Residential,truck hit a,No,Accident
+Bus accident injured passengers,Evening,Residential,bus accident injured,No,Accident
+Two cars collided near signal,Afternoon,Railway Station,two cars collided,No,Accident
+Truck hit a bike,Afternoon,Residential,truck hit a,Yes,Accident
+Major collision near bridge,Night,Market,major collision near,Yes,Accident
+Major collision near bridge,Evening,School,major collision near,Yes,Accident
+Bus accident injured passengers,Afternoon,Bank,bus accident injured,Yes,Accident
+Two cars collided near signal,Evening,Bank,two cars collided,Yes,Accident
+Road accident on highway,Evening,Hospital,road accident on,Yes,Accident
+Truck hit a bike,Afternoon,School,truck hit a,Yes,Accident
+Truck hit a bike,Evening,Highway,truck hit a,Yes,Accident
+Road accident on highway,Night,Hospital,road accident on,No,Accident
+Two cars collided near signal,Night,Hospital,two cars collided,No,Accident
+Truck hit a bike,Night,Highway,truck hit a,No,Accident
+Major collision near bridge,Afternoon,Residential,major collision near,No,Accident
+Road accident on highway,Morning,Office,road accident on,Yes,Accident
+Truck hit a bike,Evening,Highway,truck hit a,Yes,Accident
+Truck hit a bike,Afternoon,Railway Station,truck hit a,Yes,Accident
+Road accident on highway,Morning,Bank,road accident on,No,Accident
+Road accident on highway,Night,Residential,road accident on,No,Accident
+Two cars collided near signal,Morning,Highway,two cars collided,No,Accident
+Two cars collided near signal,Afternoon,Railway Station,two cars collided,No,Accident
+Truck hit a bike,Evening,School,truck hit a,Yes,Accident
+Road accident on highway,Night,Hospital,road accident on,Yes,Accident
+Road accident on highway,Evening,Market,road accident on,No,Accident
+Road accident on highway,Evening,Hospital,road accident on,Yes,Accident
+Road accident on highway,Morning,School,road accident on,Yes,Accident
+Truck hit a bike,Morning,Hospital,truck hit a,Yes,Accident
+Truck hit a bike,Night,Hospital,truck hit a,No,Accident
+Gas leak reported,Morning,Railway Station,gas leak reported,Yes,Emergency
+Gas leak reported,Night,Bank,gas leak reported,Yes,Emergency
+Building collapse reported,Morning,Office,building collapse reported,No,Emergency
+Building collapse reported,Evening,School,building collapse reported,No,Emergency
+Need ambulance immediately,Morning,Residential,need ambulance immediately,Yes,Emergency
+Fire broke out in apartment,Evening,Railway Station,fire broke out,Yes,Emergency
+Need ambulance immediately,Morning,Railway Station,need ambulance immediately,No,Emergency
+Need ambulance immediately,Night,School,need ambulance immediately,No,Emergency
+Gas leak reported,Morning,Railway Station,gas leak reported,Yes,Emergency
+Need ambulance immediately,Afternoon,Highway,need ambulance immediately,No,Emergency
+Medical emergency at home,Afternoon,School,medical emergency at,Yes,Emergency
+Medical emergency at home,Morning,Railway Station,medical emergency at,Yes,Emergency
+Building collapse reported,Afternoon,Residential,building collapse reported,No,Emergency
+Gas leak reported,Morning,Highway,gas leak reported,No,Emergency
+Need ambulance immediately,Night,Bank,need ambulance immediately,No,Emergency
+Need ambulance immediately,Night,Market,need ambulance immediately,No,Emergency
+Fire broke out in apartment,Night,Residential,fire broke out,Yes,Emergency
+Need ambulance immediately,Morning,Highway,need ambulance immediately,Yes,Emergency
+Gas leak reported,Evening,Railway Station,gas leak reported,No,Emergency
+Building collapse reported,Night,Hospital,building collapse reported,Yes,Emergency
+Medical emergency at home,Evening,Railway Station,medical emergency at,Yes,Emergency
+Need ambulance immediately,Night,Market,need ambulance immediately,No,Emergency
+Gas leak reported,Afternoon,Market,gas leak reported,No,Emergency
+Gas leak reported,Evening,Market,gas leak reported,No,Emergency
+Gas leak reported,Evening,Office,gas leak reported,No,Emergency
+Fire broke out in apartment,Afternoon,Residential,fire broke out,No,Emergency
+Building collapse reported,Evening,Office,building collapse reported,No,Emergency
+Need ambulance immediately,Morning,School,need ambulance immediately,No,Emergency
+Medical emergency at home,Night,Hospital,medical emergency at,No,Emergency
+Fire broke out in apartment,Afternoon,Highway,fire broke out,No,Emergency
+Need ambulance immediately,Night,Residential,need ambulance immediately,Yes,Emergency
+Medical emergency at home,Afternoon,School,medical emergency at,Yes,Emergency
+Medical emergency at home,Morning,Hospital,medical emergency at,Yes,Emergency
+Gas leak reported,Afternoon,Office,gas leak reported,No,Emergency
+Building collapse reported,Night,Highway,building collapse reported,Yes,Emergency
+Medical emergency at home,Evening,Hospital,medical emergency at,No,Emergency
+Medical emergency at home,Night,Bank,medical emergency at,No,Emergency
+Medical emergency at home,Evening,Highway,medical emergency at,No,Emergency
+Fire broke out in apartment,Night,Market,fire broke out,Yes,Emergency
+Need ambulance immediately,Afternoon,School,need ambulance immediately,Yes,Emergency
+Medical emergency at home,Evening,Railway Station,medical emergency at,Yes,Emergency
+Fire broke out in apartment,Night,Residential,fire broke out,Yes,Emergency
+Need ambulance immediately,Morning,School,need ambulance immediately,No,Emergency
+Need ambulance immediately,Evening,Office,need ambulance immediately,No,Emergency
+Building collapse reported,Evening,Hospital,building collapse reported,No,Emergency
+Medical emergency at home,Night,Office,medical emergency at,No,Emergency
+Need ambulance immediately,Morning,Market,need ambulance immediately,No,Emergency
+Need ambulance immediately,Evening,Office,need ambulance immediately,Yes,Emergency
+Building collapse reported,Morning,Bank,building collapse reported,No,Emergency
+Gas leak reported,Evening,Office,gas leak reported,No,Emergency
+Medical emergency at home,Afternoon,School,medical emergency at,Yes,Emergency
+Need ambulance immediately,Night,Bank,need ambulance immediately,Yes,Emergency
+Fire broke out in apartment,Night,Office,fire broke out,No,Emergency
+Building collapse reported,Night,Railway Station,building collapse reported,Yes,Emergency
+Need ambulance immediately,Afternoon,Bank,need ambulance immediately,Yes,Emergency
+Need ambulance immediately,Night,Bank,need ambulance immediately,No,Emergency
+Medical emergency at home,Afternoon,Office,medical emergency at,Yes,Emergency
+Building collapse reported,Afternoon,Office,building collapse reported,Yes,Emergency
+Gas leak reported,Morning,School,gas leak reported,No,Emergency
+Medical emergency at home,Evening,Railway Station,medical emergency at,No,Emergency
+Gas leak reported,Evening,Office,gas leak reported,No,Emergency
+Fire broke out in apartment,Night,Market,fire broke out,Yes,Emergency
+Building collapse reported,Afternoon,Highway,building collapse reported,No,Emergency
+Need ambulance immediately,Evening,Railway Station,need ambulance immediately,Yes,Emergency
+Medical emergency at home,Afternoon,School,medical emergency at,No,Emergency
+Building collapse reported,Night,Residential,building collapse reported,No,Emergency
+Medical emergency at home,Morning,Hospital,medical emergency at,No,Emergency
+Medical emergency at home,Evening,Market,medical emergency at,Yes,Emergency
+Building collapse reported,Evening,School,building collapse reported,Yes,Emergency
+Need ambulance immediately,Afternoon,Hospital,need ambulance immediately,Yes,Emergency
+Medical emergency at home,Night,Railway Station,medical emergency at,No,Emergency
+Building collapse reported,Night,Railway Station,building collapse reported,Yes,Emergency
+Fire broke out in apartment,Afternoon,Bank,fire broke out,Yes,Emergency
+Gas leak reported,Afternoon,Market,gas leak reported,Yes,Emergency
+Medical emergency at home,Afternoon,Bank,medical emergency at,No,Emergency
+Medical emergency at home,Morning,Railway Station,medical emergency at,No,Emergency
+Medical emergency at home,Morning,Market,medical emergency at,No,Emergency
+Gas leak reported,Night,Bank,gas leak reported,No,Emergency
+Medical emergency at home,Evening,Hospital,medical emergency at,No,Emergency
+Medical emergency at home,Afternoon,Railway Station,medical emergency at,Yes,Emergency
+Medical emergency at home,Afternoon,Residential,medical emergency at,Yes,Emergency
+Fire broke out in apartment,Afternoon,Highway,fire broke out,No,Emergency
+Fire broke out in apartment,Night,Office,fire broke out,Yes,Emergency
+Need ambulance immediately,Morning,Highway,need ambulance immediately,Yes,Emergency
+Fire broke out in apartment,Morning,Railway Station,fire broke out,No,Emergency
+Building collapse reported,Morning,Office,building collapse reported,No,Emergency
+Medical emergency at home,Afternoon,Market,medical emergency at,No,Emergency
+Building collapse reported,Morning,Office,building collapse reported,Yes,Emergency
+Building collapse reported,Morning,Highway,building collapse reported,No,Emergency
+Fire broke out in apartment,Morning,Hospital,fire broke out,Yes,Emergency
+Need ambulance immediately,Afternoon,Office,need ambulance immediately,Yes,Emergency
+Gas leak reported,Night,Office,gas leak reported,Yes,Emergency
+Fire broke out in apartment,Night,School,fire broke out,No,Emergency
+Gas leak reported,Afternoon,Market,gas leak reported,Yes,Emergency
+Fire broke out in apartment,Morning,Hospital,fire broke out,Yes,Emergency
+Fire broke out in apartment,Morning,Highway,fire broke out,No,Emergency
+Medical emergency at home,Night,Office,medical emergency at,No,Emergency
+Building collapse reported,Morning,Highway,building collapse reported,Yes,Emergency
+Fire broke out in apartment,Evening,Bank,fire broke out,No,Emergency
+Building collapse reported,Morning,Highway,building collapse reported,Yes,Emergency
+Fire broke out in apartment,Afternoon,Residential,fire broke out,No,Emergency
+Gas leak reported,Night,Office,gas leak reported,Yes,Emergency
+Gas leak reported,Evening,Residential,gas leak reported,Yes,Emergency
+Building collapse reported,Night,Hospital,building collapse reported,No,Emergency
+Building collapse reported,Night,Railway Station,building collapse reported,Yes,Emergency
+Fire broke out in apartment,Afternoon,Market,fire broke out,Yes,Emergency
+Fire broke out in apartment,Night,Hospital,fire broke out,No,Emergency
+Medical emergency at home,Night,Bank,medical emergency at,Yes,Emergency
+Medical emergency at home,Night,Hospital,medical emergency at,Yes,Emergency
+Building collapse reported,Night,Market,building collapse reported,Yes,Emergency
+Gas leak reported,Evening,Market,gas leak reported,Yes,Emergency
+Gas leak reported,Morning,Railway Station,gas leak reported,Yes,Emergency
+Building collapse reported,Evening,Railway Station,building collapse reported,Yes,Emergency
+Need ambulance immediately,Morning,Market,need ambulance immediately,Yes,Emergency
+Need ambulance immediately,Night,Hospital,need ambulance immediately,Yes,Emergency
+Fire broke out in apartment,Night,Bank,fire broke out,Yes,Emergency
+Gas leak reported,Evening,Market,gas leak reported,Yes,Emergency
+Need ambulance immediately,Night,Railway Station,need ambulance immediately,Yes,Emergency
+Fire broke out in apartment,Night,Hospital,fire broke out,No,Emergency
+Fire broke out in apartment,Night,Hospital,fire broke out,No,Emergency
+Fire broke out in apartment,Night,Market,fire broke out,Yes,Emergency
+Building collapse reported,Night,Market,building collapse reported,Yes,Emergency
+Fire broke out in apartment,Evening,School,fire broke out,No,Emergency
+Gas leak reported,Evening,Market,gas leak reported,Yes,Emergency
+Building collapse reported,Evening,Hospital,building collapse reported,No,Emergency
+Building collapse reported,Morning,Highway,building collapse reported,Yes,Emergency
+Fire broke out in apartment,Evening,Bank,fire broke out,No,Emergency
+Need ambulance immediately,Evening,Highway,need ambulance immediately,Yes,Emergency
+Medical emergency at home,Night,Residential,medical emergency at,No,Emergency
+Fire broke out in apartment,Evening,School,fire broke out,Yes,Emergency
+Fire broke out in apartment,Night,School,fire broke out,No,Emergency
+Medical emergency at home,Evening,Highway,medical emergency at,No,Emergency
+Fire broke out in apartment,Morning,Hospital,fire broke out,No,Emergency
+Need ambulance immediately,Afternoon,Hospital,need ambulance immediately,Yes,Emergency
+Need ambulance immediately,Morning,Railway Station,need ambulance immediately,No,Emergency
+Need ambulance immediately,Afternoon,Residential,need ambulance immediately,Yes,Emergency
+Fire broke out in apartment,Night,Bank,fire broke out,No,Emergency
+Building collapse reported,Afternoon,Office,building collapse reported,No,Emergency
+Gas leak reported,Evening,Hospital,gas leak reported,Yes,Emergency
+Medical emergency at home,Night,Office,medical emergency at,No,Emergency
+Need ambulance immediately,Afternoon,School,need ambulance immediately,Yes,Emergency
+Need ambulance immediately,Evening,Bank,need ambulance immediately,Yes,Emergency
+Medical emergency at home,Evening,Highway,medical emergency at,No,Emergency
+Need ambulance immediately,Night,Railway Station,need ambulance immediately,No,Emergency
+Building collapse reported,Morning,Highway,building collapse reported,Yes,Emergency
+Building collapse reported,Afternoon,Market,building collapse reported,Yes,Emergency
+Medical emergency at home,Evening,Residential,medical emergency at,No,Emergency
+Gas leak reported,Afternoon,Market,gas leak reported,No,Emergency
+Medical emergency at home,Morning,Bank,medical emergency at,No,Emergency
+Fire broke out in apartment,Afternoon,Railway Station,fire broke out,Yes,Emergency
+Need ambulance immediately,Evening,Market,need ambulance immediately,No,Emergency
+Building collapse reported,Night,Bank,building collapse reported,Yes,Emergency
+Fire broke out in apartment,Evening,School,fire broke out,No,Emergency
+Medical emergency at home,Evening,School,medical emergency at,Yes,Emergency
+Gas leak reported,Night,Residential,gas leak reported,Yes,Emergency
+Medical emergency at home,Afternoon,Highway,medical emergency at,No,Emergency
+Fire broke out in apartment,Night,Office,fire broke out,No,Emergency
+Medical emergency at home,Afternoon,Office,medical emergency at,Yes,Emergency
+Gas leak reported,Night,Residential,gas leak reported,Yes,Emergency
+Medical emergency at home,Evening,Market,medical emergency at,No,Emergency
+Building collapse reported,Evening,Highway,building collapse reported,No,Emergency
+Need ambulance immediately,Afternoon,Residential,need ambulance immediately,Yes,Emergency
+Need ambulance immediately,Afternoon,Railway Station,need ambulance immediately,No,Emergency
+Fire broke out in apartment,Evening,School,fire broke out,Yes,Emergency
+Gas leak reported,Evening,Bank,gas leak reported,No,Emergency
+Medical emergency at home,Night,Market,medical emergency at,Yes,Emergency
+Gas leak reported,Night,School,gas leak reported,Yes,Emergency
+Fire broke out in apartment,Evening,Railway Station,fire broke out,Yes,Emergency
+Building collapse reported,Evening,Office,building collapse reported,Yes,Emergency
+Need ambulance immediately,Evening,Hospital,need ambulance immediately,No,Emergency
+Fire broke out in apartment,Evening,School,fire broke out,No,Emergency
+Need ambulance immediately,Morning,Highway,need ambulance immediately,Yes,Emergency
+Need ambulance immediately,Morning,Highway,need ambulance immediately,Yes,Emergency
+Medical emergency at home,Night,Highway,medical emergency at,Yes,Emergency
+Need ambulance immediately,Night,Highway,need ambulance immediately,Yes,Emergency
+Fire broke out in apartment,Night,Bank,fire broke out,Yes,Emergency
+Fire broke out in apartment,Morning,Market,fire broke out,Yes,Emergency
+Gas leak reported,Morning,School,gas leak reported,No,Emergency
+Building collapse reported,Night,Hospital,building collapse reported,No,Emergency
+Building collapse reported,Evening,Market,building collapse reported,No,Emergency
+Fire broke out in apartment,Morning,Highway,fire broke out,Yes,Emergency
+Fire broke out in apartment,Evening,Highway,fire broke out,No,Emergency
+Gas leak reported,Morning,Office,gas leak reported,No,Emergency
+Building collapse reported,Night,Market,building collapse reported,No,Emergency
+Medical emergency at home,Afternoon,Residential,medical emergency at,No,Emergency
+Need ambulance immediately,Evening,Residential,need ambulance immediately,No,Emergency
+Gas leak reported,Morning,Residential,gas leak reported,Yes,Emergency
+Fire broke out in apartment,Morning,Railway Station,fire broke out,Yes,Emergency
+Gas leak reported,Afternoon,Bank,gas leak reported,Yes,Emergency
+Building collapse reported,Afternoon,Residential,building collapse reported,Yes,Emergency
+Medical emergency at home,Evening,School,medical emergency at,Yes,Emergency
+Medical emergency at home,Morning,Hospital,medical emergency at,Yes,Emergency
+Gas leak reported,Morning,Office,gas leak reported,Yes,Emergency
+Medical emergency at home,Night,Bank,medical emergency at,No,Emergency
+Medical emergency at home,Afternoon,Highway,medical emergency at,No,Emergency
+Need ambulance immediately,Morning,School,need ambulance immediately,No,Emergency
+Building collapse reported,Night,Bank,building collapse reported,No,Emergency
+Need ambulance immediately,Afternoon,Bank,need ambulance immediately,No,Emergency
+Building collapse reported,Afternoon,Market,building collapse reported,No,Emergency
+Medical emergency at home,Afternoon,Railway Station,medical emergency at,No,Emergency

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCity - Crime Prediction System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/static/css/landing.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo animate__animated animate__fadeInLeft">
+                <i class="fas fa-city"></i>
+                <span>SmartCity</span>
+            </div>
+            <div class="nav-links animate__animated animate__fadeInRight">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#analytics">Analytics</a>
+                <button class="btn btn-outline" onclick="goToLogin()">Login</button>
+                <button class="btn btn-primary" onclick="showRoleSelection()">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text animate__animated animate__fadeInUp">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Smart City</span><br>
+                    Crime Prediction System
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered crime categorization for faster response and safer communities
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-lg btn-primary" onclick="showRoleSelection()">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </button>
+                    <button class="btn btn-lg btn-outline" onclick="scrollToHowItWorks()">
+                        <i class="fas fa-play"></i> Learn More
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>98.5%</h3>
+                        <p>Accuracy</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Crime Categories</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Availability</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate__animated animate__fadeInRight">
+                <div class="city-illustration">
+                    <i class="fas fa-building"></i>
+                    <i class="fas fa-building"></i>
+                    <i class="fas fa-building"></i>
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Role Selection Modal -->
+    <div id="roleModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Choose Your Role</h2>
+                <button class="modal-close" onclick="closeRoleModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p>Select how you want to use SmartCity</p>
+            <div class="role-options">
+                <div class="role-card" onclick="selectRole('citizen')">
+                    <i class="fas fa-user"></i>
+                    <h3>Citizen</h3>
+                    <p>Submit complaints and track their status</p>
+                    <button class="btn btn-primary">Continue as Citizen</button>
+                </div>
+                <div class="role-card" onclick="selectRole('admin')">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Admin</h3>
+                    <p>Manage complaints and view analytics</p>
+                    <button class="btn btn-secondary">Continue as Admin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI-Powered</h3>
+                <p>Advanced Naive Bayes algorithm for accurate crime categorization</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location-Based</h3>
+                <p>Complaints routed to location-specific administrators</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Analytics Dashboard</h3>
+                <p>Real-time crime statistics and monthly trends</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Instant Prediction</h3>
+                <p>One-click crime category prediction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <i class="fas fa-user-plus"></i>
+                <h3>Register</h3>
+                <p>Create your account as Citizen or Admin</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <i class="fas fa-comment-dots"></i>
+                <h3>Submit Complaint</h3>
+                <p>Describe the incident with details</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <i class="fas fa-cogs"></i>
+                <h3>AI Analysis</h3>
+                <p>System predicts crime category</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <i class="fas fa-chart-line"></i>
+                <h3>Track & Analyze</h3>
+                <p>Monitor trends and statistics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Preview Section -->
+    <section id="analytics" class="analytics-preview">
+        <h2 class="section-title">Real-Time Analytics</h2>
+        <div class="analytics-content">
+            <div class="analytics-text">
+                <h3>Data-Driven Insights</h3>
+                <p>Monitor crime patterns and trends in your area with our advanced analytics dashboard.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Monthly crime statistics</li>
+                    <li><i class="fas fa-check-circle"></i> Category-wise distribution</li>
+                    <li><i class="fas fa-check-circle"></i> Location-based analysis</li>
+                </ul>
+            </div>
+            <div class="analytics-visual">
+                <div class="chart-placeholder">
+                    <i class="fas fa-chart-bar"></i>
+                    <p>Analytics Dashboard Preview</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SmartCity</h3>
+                <p>Making cities safer with AI</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#analytics">Analytics</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> support@smartcity.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmartCity. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/landing.js"></script>
+</body>
+</html>
