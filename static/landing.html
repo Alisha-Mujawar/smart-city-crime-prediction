@@ -23,17 +23,23 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo animate__animated animate__fadeInLeft">
+            <div class="logo">
                 <i class="fas fa-city"></i>
                 <span>SmartCity</span>
             </div>
-            <div class="nav-links animate__animated animate__fadeInRight">
+        
+            <!-- Hamburger menu for mobile -->
+            <button class="menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <div class="nav-links" id="navLinks">
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#analytics">Analytics</a>
                 <button class="btn btn-outline" onclick="goToLogin()">Login</button>
                 <button class="btn btn-primary" onclick="showRoleSelection()">Get Started</button>
-            </div>
+         </div>
         </div>
     </nav>
 
