@@ -102,10 +102,22 @@ def load_model() -> Optional[Dict[str, Any]]:
             print("✓ Crime model loaded successfully")
             return model_data
     except FileNotFoundError:
-        print("✗ Crime model not found. Please run train_crime_model.py first")
-        return None
+        print("✗ Crime model not found. Training new model...")
     except Exception as e:
         print(f"✗ Error loading model: {e}")
+        print("Training new model...")
+    
+    # If model loading fails, train a new one
+    try:
+        import subprocess
+        subprocess.run(['python', 'train_crime_model.py'], check=True)
+        
+        with open('crime_model.pkl', 'rb') as f:
+            model_data = pickle.load(f)
+            print("✓ New model trained and loaded")
+            return model_data
+    except Exception as e:
+        print(f"✗ Failed to train model: {e}")
         return None
 
 model_data = load_model()
