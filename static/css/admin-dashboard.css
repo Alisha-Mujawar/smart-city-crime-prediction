@@ -657,3 +657,212 @@ canvas {
         width: 150px;
     }
 }
+
+/* Status Select */
+.status-select {
+    padding: 0.5rem;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background: white;
+    transition: var(--transition);
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background: #fff3e0;
+    color: #ff9800;
+}
+
+.status-in-progress {
+    background: #e3f2fd;
+    color: #2196f3;
+}
+
+.status-in_progress {
+    background: #e3f2fd;
+    color: #2196f3;
+}
+
+.status-resolved {
+    background: #e8f5e9;
+    color: #4caf50;
+}
+
+/* Toast Notification */
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification Dropdown */
+.notification-dropdown {
+    position: fixed;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 10000;
+    display: none;
+}
+
+.notification-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-light);
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+.notification-count {
+    font-size: 0.8rem;
+    color: var(--warning);
+    font-weight: 600;
+}
+
+.notification-list {
+    padding: 0.5rem;
+}
+
+.notification-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.notification-item:hover {
+    background: var(--bg-light);
+}
+
+.notification-item i {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.notification-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.notification-item small {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* Status Select */
+.status-select {
+    padding: 0.5rem;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background: white;
+    transition: var(--transition);
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background: #fff3e0;
+    color: #ff9800;
+}
+
+.status-in-progress {
+    background: #e3f2fd;
+    color: #2196f3;
+}
+
+.status-in_progress {
+    background: #e3f2fd;
+    color: #2196f3;
+}
+
+.status-resolved {
+    background: #e8f5e9;
+    color: #4caf50;
+}
+
+/* Admin Avatar Clickable */
+.admin-avatar {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.admin-avatar:hover {
+    opacity: 0.8;
+}
+
+/* Notification Bell */
+.notification-bell {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.notification-bell:hover {
+    opacity: 0.8;
+}
+
+/* Toast */
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}

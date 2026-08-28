@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadUserData();
     setupNavigation();
     setupComplaintForm();
+    setupNotificationBell();
+    setupProfileClick();
     loadDashboardData();
 });
 
@@ -19,7 +21,10 @@ function loadUserData() {
         document.getElementById('profile-location').textContent = currentUser.location || 'Not Set';
         
         // Pre-fill complaint form with citizen info
-        document.getElementById('citizen-name').value = currentUser.name || '';
+        const citizenNameInput = document.getElementById('citizen-name');
+        if (citizenNameInput) {
+            citizenNameInput.value = currentUser.name || '';
+        }
     } else {
         // Redirect to login if no user data
         window.location.href = '/auth?type=login';
@@ -33,6 +38,85 @@ function setupNavigation() {
             showSection(item.dataset.section);
         });
     });
+}
+
+function setupNotificationBell() {
+    const notificationBell = document.querySelector('.notification-bell');
+    if (notificationBell) {
+        notificationBell.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleNotifications();
+        });
+    }
+    
+    // Close notification dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        const dropdown = document.getElementById('notification-dropdown');
+        if (dropdown && !e.target.closest('.notification-bell')) {
+            dropdown.style.display = 'none';
+        }
+    });
+}
+
+function toggleNotifications() {
+    let dropdown = document.getElementById('notification-dropdown');
+    
+    if (!dropdown) {
+        // Create notification dropdown
+        dropdown = document.createElement('div');
+        dropdown.id = 'notification-dropdown';
+        dropdown.className = 'notification-dropdown';
+        dropdown.innerHTML = `
+            <div class="notification-header">
+                <h3>Notifications</h3>
+            </div>
+            <div class="notification-list">
+                <div class="notification-item">
+                    <i class="fas fa-check-circle" style="color: #4caf50;"></i>
+                    <div>
+                        <p><strong>Complaint Resolved</strong></p>
+                        <small>Your complaint #123 has been resolved</small>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <i class="fas fa-clock" style="color: #ff9800;"></i>
+                    <div>
+                        <p><strong>Complaint in Progress</strong></p>
+                        <small>Your complaint #124 is being processed</small>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <i class="fas fa-info-circle" style="color: #2196f3;"></i>
+                    <div>
+                        <p><strong>Welcome to SmartCity</strong></p>
+                        <small>Thank you for joining our platform</small>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(dropdown);
+    }
+    
+    // Toggle display
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+    } else {
+        dropdown.style.display = 'block';
+        // Position the dropdown
+        const bell = document.querySelector('.notification-bell');
+        const rect = bell.getBoundingClientRect();
+        dropdown.style.top = rect.bottom + 10 + 'px';
+        dropdown.style.right = (window.innerWidth - rect.right) + 'px';
+    }
+}
+
+function setupProfileClick() {
+    const userAvatar = document.querySelector('.user-avatar');
+    if (userAvatar) {
+        userAvatar.addEventListener('click', () => {
+            showSection('profile');
+        });
+    }
 }
 
 function showSection(sectionName) {
@@ -83,7 +167,7 @@ function setupComplaintForm() {
             const location = document.getElementById('citizen-location').value;
             
             if (!complaintText || !citizenName || !location) {
-                alert('Please fill all required fields');
+                showFormMessage('Please fill all required fields', 'error');
                 return;
             }
             
@@ -112,24 +196,70 @@ function setupComplaintForm() {
                     throw new Error(result.detail || 'Failed to submit complaint');
                 }
                 
-                alert(`Complaint submitted successfully!\n\nPredicted Category: ${result.predicted_crime}\nConfidence: ${(result.confidence * 100).toFixed(2)}%\nComplaint ID: ${result.complaint_id}`);
+                // Show success message in form (not popup)
+                showFormMessage('Complaint submitted successfully!', 'success');
                 
                 // Reset form
                 complaintForm.reset();
                 
+                // Pre-fill name again
+                if (currentUser?.name) {
+                    document.getElementById('citizen-name').value = currentUser.name;
+                }
+                
                 // Reload dashboard data
                 loadDashboardData();
                 
-                // Show dashboard
-                showSection('dashboard');
+                // Auto-hide message after 3 seconds
+                setTimeout(() => {
+                    hideFormMessage();
+                }, 3000);
                 
             } catch (error) {
-                alert('Error: ' + error.message);
+                showFormMessage('Error: ' + error.message, 'error');
             } finally {
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
             }
         });
+    }
+}
+
+function showFormMessage(message, type) {
+    let messageDiv = document.getElementById('form-message');
+    
+    if (!messageDiv) {
+        messageDiv = document.createElement('div');
+        messageDiv.id = 'form-message';
+        messageDiv.style.cssText = `
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            text-align: center;
+        `;
+        const form = document.getElementById('complaint-form');
+        form.insertBefore(messageDiv, form.firstChild);
+    }
+    
+    if (type === 'success') {
+        messageDiv.style.backgroundColor = '#e8f5e9';
+        messageDiv.style.color = '#4caf50';
+        messageDiv.style.border = '1px solid #4caf50';
+    } else {
+        messageDiv.style.backgroundColor = '#fce4ec';
+        messageDiv.style.color = '#e91e63';
+        messageDiv.style.border = '1px solid #e91e63';
+    }
+    
+    messageDiv.textContent = message;
+    messageDiv.style.display = 'block';
+}
+
+function hideFormMessage() {
+    const messageDiv = document.getElementById('form-message');
+    if (messageDiv) {
+        messageDiv.style.display = 'none';
     }
 }
 
@@ -141,11 +271,13 @@ async function loadDashboardData() {
         const complaints = await response.json();
         
         // Update stats
-        document.getElementById('total-my-complaints').textContent = complaints.length;
-        document.getElementById('pending-my-complaints').textContent = 
-            complaints.filter(c => c.status === 'pending').length;
-        document.getElementById('resolved-my-complaints').textContent = 
-            complaints.filter(c => c.status === 'resolved').length;
+        const totalComplaints = document.getElementById('total-my-complaints');
+        const pendingComplaints = document.getElementById('pending-my-complaints');
+        const resolvedComplaints = document.getElementById('resolved-my-complaints');
+        
+        if (totalComplaints) totalComplaints.textContent = complaints.length;
+        if (pendingComplaints) pendingComplaints.textContent = complaints.filter(c => c.status === 'pending').length;
+        if (resolvedComplaints) resolvedComplaints.textContent = complaints.filter(c => c.status === 'resolved').length;
         
         // Update complaints table
         const tbody = document.getElementById('my-complaints-body');
@@ -153,16 +285,15 @@ async function loadDashboardData() {
             tbody.innerHTML = '';
             
             if (complaints.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center;">No complaints yet</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: #999;">No complaints yet</td></tr>';
             } else {
                 complaints.forEach(complaint => {
                     const row = document.createElement('tr');
-                    const statusClass = `status-${complaint.status.replace('_', '-')}`;
                     row.innerHTML = `
                         <td>#${complaint.id}</td>
                         <td>${complaint.complaint_text.substring(0, 50)}...</td>
                         <td><strong>${complaint.predicted_crime || 'Pending'}</strong></td>
-                        <td><span class="status-badge ${statusClass}">${complaint.status}</span></td>
+                        <td><span class="status-badge status-${complaint.status}">${complaint.status}</span></td>
                         <td>${new Date(complaint.timestamp).toLocaleDateString()}</td>
                     `;
                     tbody.appendChild(row);
@@ -183,11 +314,10 @@ async function loadDashboardData() {
                     item.className = 'recent-item';
                     item.style.cssText = 'background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 0.5rem;';
                     
-                    const statusClass = `status-${complaint.status.replace('_', '-')}`;
                     item.innerHTML = `
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
                             <strong>${complaint.predicted_crime || 'Pending'}</strong>
-                            <span class="status-badge ${statusClass}">${complaint.status}</span>
+                            <span class="status-badge status-${complaint.status}">${complaint.status}</span>
                         </div>
                         <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">${complaint.complaint_text.substring(0, 80)}...</p>
                         <small style="color: #666;">${new Date(complaint.timestamp).toLocaleString()}</small>

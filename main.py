@@ -380,18 +380,29 @@ async def get_citizen_complaints(email: str):
 # Admin routes
 @app.get("/api/admin/complaints")
 async def get_admin_complaints(location: str):
+    print(f"Fetching complaints for location: {location}")
+    
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
+    
+    # First, check what locations exist
+    cursor.execute('SELECT DISTINCT location FROM complaints')
+    locations = cursor.fetchall()
+    print(f"Available locations in DB: {locations}")
+    
+    # Get complaints for specific location
     cursor.execute('''
         SELECT * FROM complaints 
-        WHERE location=?
+        WHERE LOWER(location) = LOWER(?)
         ORDER BY created_at DESC
     ''', (location,))
     
     complaints = cursor.fetchall()
+    print(f"Found {len(complaints)} complaints for {location}")
+    
     conn.close()
     
-    return [
+    result = [
         {
             "id": c[0],
             "complaint_text": c[1],
@@ -405,9 +416,46 @@ async def get_admin_complaints(location: str):
         }
         for c in complaints
     ]
+    
+    print(f"Returning {len(result)} complaints")
+    return result
 
 @app.put("/api/admin/update-status/{complaint_id}")
-async def update_status(complaint_id: int, request: StatusUpdateRequest):
+async def update_status(complaint_id: int, status: str):
+    print(f"Updating complaint {complaint_id} to status: {status}")
+    
+    if status not in ['pending', 'in_progress', 'resolved']:
+        raise HTTPException(status_code=400, detail="Invalid status")
+    
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    
+    try:
+        # Simple update query
+        cursor.execute('UPDATE complaints SET status=? WHERE id=?', (status, complaint_id))
+        
+        # Check if any row was updated
+        if cursor.rowcount == 0:
+            raise HTTPException(status_code=404, detail="Complaint not found")
+        
+        conn.commit()
+        print(f"Successfully updated complaint {complaint_id}")
+        
+        return {"success": True, "message": f"Status updated to {status}"}
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        conn.rollback()
+        print(f"Error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        conn.close()
+
+@app.post("/api/admin/update-status/{complaint_id}")
+async def update_status_post(complaint_id: int, request: StatusUpdateRequest):
+    print(f"POST: Updating complaint {complaint_id} to status: {request.status}")
+    
     if request.status not in ['pending', 'in_progress', 'resolved']:
         raise HTTPException(status_code=400, detail="Invalid status")
     
@@ -415,19 +463,17 @@ async def update_status(complaint_id: int, request: StatusUpdateRequest):
     cursor = conn.cursor()
     
     try:
-        cursor.execute('''
-            UPDATE complaints SET status=? WHERE id=?
-        ''', (request.status, complaint_id))
+        cursor.execute('UPDATE complaints SET status=? WHERE id=?', (request.status, complaint_id))
         conn.commit()
         
         return {"success": True, "message": f"Status updated to {request.status}"}
     
     except Exception as e:
         conn.rollback()
-        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
     finally:
         conn.close()
-
+        
 @app.get("/api/admin/analytics")
 async def get_analytics(location: str, period: str = "current"):
     conn = sqlite3.connect(DB_PATH)
