@@ -13,7 +13,13 @@ import os
 import hashlib
 import secrets
 from collections import Counter, defaultdict
+import os
+import sys
 
+# For Render deployment - auto-train model if not exists
+if not os.path.exists('crime_model.pkl'):
+    print("Training model...")
+    os.system('python train_crime_model.py')
 app = FastAPI(title="Smart City Crime Prediction System")
 
 # CORS middleware
@@ -473,7 +479,7 @@ async def update_status_post(complaint_id: int, request: StatusUpdateRequest):
         raise HTTPException(status_code=500, detail=str(e))
     finally:
         conn.close()
-        
+
 @app.get("/api/admin/analytics")
 async def get_analytics(location: str, period: str = "current"):
     conn = sqlite3.connect(DB_PATH)

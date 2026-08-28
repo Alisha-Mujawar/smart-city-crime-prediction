@@ -1,0 +1,13 @@
+cd "C:\Users\mujaw\OneDrive\Desktop - Copy\smart_city"
+
+@"
+services:
+  - type: web
+    name: smart-city-crime-prediction
+    runtime: python
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+"@ | Out-File -FilePath "render.yaml" -Encoding UTF8
