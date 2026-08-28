@@ -303,3 +303,20 @@ body {
         font-size: 1.3rem;
     }
 }
+
+/* Mobile Select Fix */
+@media (max-width: 768px) {
+    select,
+    #location {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 16px; /* Prevents iOS zoom */
+        border: 2px solid var(--border);
+        border-radius: 8px;
+        background-color: white;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+    }
+}

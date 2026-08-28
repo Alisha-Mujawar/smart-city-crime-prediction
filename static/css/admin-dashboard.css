@@ -977,3 +977,32 @@ canvas {
         z-index: 1000;
     }
 }
+
+/* Mobile Select Fix */
+@media (max-width: 768px) {
+    select,
+    .status-select,
+    #month-select,
+    #admin-zone {
+        width: 100%;
+        padding: 10px 14px;
+        font-size: 14px;
+        border: 2px solid var(--border);
+        border-radius: 8px;
+        background-color: white;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+        max-width: 100%;
+    }
+    
+    .status-select {
+        padding: 6px 8px;
+        font-size: 12px;
+        min-width: 100px;
+    }
+}
