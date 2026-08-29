@@ -1,22 +1,18 @@
 let currentRole = 'citizen';
 let isLoginMode = false;
 
-// Get URL parameters
 const urlParams = new URLSearchParams(window.location.search);
 const authType = urlParams.get('type') || 'login';
 const roleParam = urlParams.get('role') || 'citizen';
 
-// Set initial mode based on URL
 isLoginMode = authType === 'login';
 currentRole = roleParam;
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Auth page loaded');
     console.log('Mode:', isLoginMode ? 'login' : 'signup');
     console.log('Role:', currentRole);
     
-    // Set initial role tab
     switchRole(currentRole);
     updateAuthMode();
 });
@@ -24,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function switchRole(role) {
     currentRole = role;
     
-    // Update tab buttons
     document.querySelectorAll('.tab-btn').forEach(btn => {
         if (btn.dataset.role === role) {
             btn.classList.add('active');
@@ -32,8 +27,7 @@ function switchRole(role) {
             btn.classList.remove('active');
         }
     });
-    
-    // Show/hide location field for admin
+   
     const locationGroup = document.getElementById('locationGroup');
     if (role === 'admin') {
         locationGroup.style.display = 'block';
@@ -62,7 +56,6 @@ function updateAuthMode() {
     const phoneGroup = document.getElementById('phoneGroup');
     const errorMessage = document.getElementById('error-message');
     
-    // Hide error message
     errorMessage.style.display = 'none';
     
     if (isLoginMode) {
@@ -94,7 +87,6 @@ document.getElementById('authForm').addEventListener('submit', async (e) => {
     const phone = document.getElementById('phone')?.value || '';
     const location = document.getElementById('location')?.value || '';
     
-    // Validate
     if (!email || !password) {
         showError('Please fill in all required fields');
         return;
@@ -124,7 +116,6 @@ document.getElementById('authForm').addEventListener('submit', async (e) => {
     console.log('Sending request to:', endpoint);
     console.log('Data:', data);
     
-    // Show loading state
     const authBtn = document.getElementById('authBtn');
     const originalText = authBtn.innerHTML;
     authBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
@@ -148,13 +139,11 @@ document.getElementById('authForm').addEventListener('submit', async (e) => {
             throw new Error(result.detail || 'Authentication failed');
         }
         
-        // Store user info
         localStorage.setItem('user', JSON.stringify(result.user));
         localStorage.setItem('token', result.token);
         
         console.log('Login successful, redirecting...');
         
-        // Redirect based on role
         if (currentRole === 'citizen') {
             window.location.href = '/citizen-dashboard';
         } else if (currentRole === 'admin') {

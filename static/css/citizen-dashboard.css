@@ -33,7 +33,6 @@ body {
     min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
     width: var(--sidebar-width);
     background: var(--primary);
@@ -119,7 +118,6 @@ body {
     background: #d32f2f;
 }
 
-/* Main Content */
 .main-content {
     flex: 1;
     margin-left: var(--sidebar-width);
@@ -127,7 +125,6 @@ body {
     min-height: 100vh;
 }
 
-/* Top Bar */
 .top-bar {
     background: var(--bg-white);
     padding: 1rem 2rem;
@@ -194,7 +191,6 @@ body {
     border-radius: 50%;
 }
 
-/* Sections */
 .section {
     display: none;
     padding: 2rem;
@@ -210,7 +206,6 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Welcome Banner */
 .welcome-banner {
     background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
     color: white;
@@ -250,7 +245,6 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Stats Grid */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -288,7 +282,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Complaint Form */
 .complaint-form-container {
     background: white;
     padding: 2rem;
@@ -356,7 +349,6 @@ body {
     box-shadow: 0 10px 25px rgba(26, 35, 126, 0.3);
 }
 
-/* Tables */
 .complaints-table {
     background: white;
     border-radius: var(--radius);
@@ -383,7 +375,6 @@ th {
     font-weight: 600;
 }
 
-/* Profile */
 .profile-container {
     background: white;
     border-radius: var(--radius);
@@ -496,7 +487,6 @@ th {
     transform: translateX(25px);
 }
 
-/* Notification Dropdown */
 .notification-dropdown {
     position: fixed;
     background: white;
@@ -554,7 +544,6 @@ th {
     font-size: 0.8rem;
 }
 
-/* Status Badge */
 .status-badge {
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -583,7 +572,6 @@ th {
     color: #4caf50;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .sidebar {
         width: 0;
@@ -698,7 +686,6 @@ th {
     }
 }
 
-/* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
     background: none;
@@ -720,7 +707,6 @@ th {
     }
 }
 
-/* Mobile Select Fix */
 @media (max-width: 768px) {
     select,
     .form-group select,

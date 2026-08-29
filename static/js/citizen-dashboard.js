@@ -1,6 +1,5 @@
 let currentUser = null;
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     loadUserData();
     setupNavigation();
@@ -20,13 +19,11 @@ function loadUserData() {
         document.getElementById('profile-phone').textContent = currentUser.phone || '+1234567890';
         document.getElementById('profile-location').textContent = currentUser.location || 'Not Set';
         
-        // Pre-fill complaint form with citizen info
         const citizenNameInput = document.getElementById('citizen-name');
         if (citizenNameInput) {
             citizenNameInput.value = currentUser.name || '';
         }
     } else {
-        // Redirect to login if no user data
         window.location.href = '/auth?type=login';
     }
 }
@@ -49,7 +46,6 @@ function setupNotificationBell() {
         });
     }
     
-    // Close notification dropdown when clicking outside
     document.addEventListener('click', (e) => {
         const dropdown = document.getElementById('notification-dropdown');
         if (dropdown && !e.target.closest('.notification-bell')) {
@@ -62,7 +58,6 @@ function toggleNotifications() {
     let dropdown = document.getElementById('notification-dropdown');
     
     if (!dropdown) {
-        // Create notification dropdown
         dropdown = document.createElement('div');
         dropdown.id = 'notification-dropdown';
         dropdown.className = 'notification-dropdown';
@@ -97,12 +92,10 @@ function toggleNotifications() {
         document.body.appendChild(dropdown);
     }
     
-    // Toggle display
     if (dropdown.style.display === 'block') {
         dropdown.style.display = 'none';
     } else {
         dropdown.style.display = 'block';
-        // Position the dropdown
         const bell = document.querySelector('.notification-bell');
         const rect = bell.getBoundingClientRect();
         dropdown.style.top = rect.bottom + 10 + 'px';
@@ -120,7 +113,6 @@ function setupProfileClick() {
 }
 
 function showSection(sectionName) {
-    // Update nav items
     document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.remove('active');
         if (item.dataset.section === sectionName) {
@@ -128,7 +120,6 @@ function showSection(sectionName) {
         }
     });
     
-    // Update sections
     document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
     });
@@ -138,7 +129,6 @@ function showSection(sectionName) {
         targetSection.classList.add('active');
     }
     
-    // Update page title
     const titles = {
         'dashboard': 'Dashboard',
         'complaints': 'My Complaints',
@@ -148,7 +138,6 @@ function showSection(sectionName) {
     };
     document.getElementById('page-title').textContent = titles[sectionName] || 'Dashboard';
     
-    // Close sidebar on mobile
     document.querySelector('.sidebar').classList.remove('show');
 }
 
@@ -196,21 +185,16 @@ function setupComplaintForm() {
                     throw new Error(result.detail || 'Failed to submit complaint');
                 }
                 
-                // Show success message in form (not popup)
                 showFormMessage('Complaint submitted successfully!', 'success');
                 
-                // Reset form
                 complaintForm.reset();
                 
-                // Pre-fill name again
                 if (currentUser?.name) {
                     document.getElementById('citizen-name').value = currentUser.name;
                 }
                 
-                // Reload dashboard data
                 loadDashboardData();
                 
-                // Auto-hide message after 3 seconds
                 setTimeout(() => {
                     hideFormMessage();
                 }, 3000);
@@ -270,7 +254,6 @@ async function loadDashboardData() {
         const response = await fetch(`/api/citizen/complaints?email=${encodeURIComponent(currentUser.email)}`);
         const complaints = await response.json();
         
-        // Update stats
         const totalComplaints = document.getElementById('total-my-complaints');
         const pendingComplaints = document.getElementById('pending-my-complaints');
         const resolvedComplaints = document.getElementById('resolved-my-complaints');
@@ -279,7 +262,6 @@ async function loadDashboardData() {
         if (pendingComplaints) pendingComplaints.textContent = complaints.filter(c => c.status === 'pending').length;
         if (resolvedComplaints) resolvedComplaints.textContent = complaints.filter(c => c.status === 'resolved').length;
         
-        // Update complaints table
         const tbody = document.getElementById('my-complaints-body');
         if (tbody) {
             tbody.innerHTML = '';
@@ -301,7 +283,6 @@ async function loadDashboardData() {
             }
         }
         
-        // Update recent complaints
         const recentList = document.getElementById('recent-complaints-list');
         if (recentList) {
             recentList.innerHTML = '';

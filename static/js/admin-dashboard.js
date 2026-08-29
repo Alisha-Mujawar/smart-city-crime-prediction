@@ -2,7 +2,6 @@ let currentAdmin = null;
 let complaintsData = [];
 let charts = {};
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     loadAdminData();
     setupNavigation();
@@ -20,7 +19,6 @@ function loadAdminData() {
     if (adminData) {
         currentAdmin = JSON.parse(adminData);
         
-        // Check if user is admin
         if (currentAdmin.role !== 'admin') {
             window.location.href = '/auth?type=login';
             return;
@@ -38,7 +36,6 @@ function loadAdminData() {
         const adminEmail = document.getElementById('admin-email');
         if (adminEmail) adminEmail.value = currentAdmin.email || 'admin@smartcity.com';
     } else {
-        // Redirect to login if no admin data
         window.location.href = '/auth?type=login';
     }
 }
@@ -73,7 +70,6 @@ function setupNotificationBell() {
         });
     }
     
-    // Close notification dropdown when clicking outside
     document.addEventListener('click', (e) => {
         const dropdown = document.getElementById('admin-notification-dropdown');
         if (dropdown && !e.target.closest('.notification-bell')) {
@@ -107,10 +103,8 @@ function toggleNotifications() {
         document.body.appendChild(dropdown);
     }
     
-    // Update notifications based on complaints
     updateNotifications(dropdown);
     
-    // Toggle display
     if (dropdown.style.display === 'block') {
         dropdown.style.display = 'none';
     } else {
@@ -253,7 +247,6 @@ function setupPredictForm() {
                     throw new Error(result.detail || 'Prediction failed');
                 }
                 
-                // Show result
                 const resultSection = document.getElementById('prediction-result');
                 if (resultSection) {
                     resultSection.style.display = 'block';
@@ -289,7 +282,6 @@ function setupPredictForm() {
 }
 
 function showSection(sectionName) {
-    // Update nav items
     document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.remove('active');
         if (item.dataset.section === sectionName) {
@@ -297,7 +289,6 @@ function showSection(sectionName) {
         }
     });
     
-    // Update sections
     document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
     });
@@ -307,7 +298,6 @@ function showSection(sectionName) {
         targetSection.classList.add('active');
     }
     
-    // Update page title
     const titles = {
         'overview': 'Overview',
         'complaints': 'Complaints Management',
@@ -319,14 +309,12 @@ function showSection(sectionName) {
     if (pageTitle) {
         pageTitle.textContent = titles[sectionName] || 'Overview';
     }
-    
-    // Close sidebar on mobile
+
     const sidebar = document.querySelector('.admin-sidebar');
     if (sidebar) {
         sidebar.classList.remove('show');
     }
     
-    // Load data for specific sections
     if (sectionName === 'analytics') {
         loadAnalytics();
     }
@@ -369,13 +357,10 @@ async function loadDashboardData() {
         console.log('Complaints loaded:', complaintsData.length);
         console.log('Complaints data:', complaintsData);
         
-        // Update stats
         updateStats();
         
-        // Update complaints table
         renderComplaints(complaintsData);
         
-        // Update notification badge
         updateNotificationBadge();
         
     } catch (error) {
@@ -467,7 +452,6 @@ function handleStatusChange(selectElement) {
     const newStatus = selectElement.value;
     console.log('Status change requested:', complaintId, newStatus);
     
-    // Call updateStatus with proper parameters
     updateStatus(complaintId, newStatus);
 }
 
@@ -475,7 +459,6 @@ async function updateStatus(complaintId, status) {
     console.log('Updating complaint:', complaintId, 'to status:', status);
     
     try {
-        // Use POST instead of PUT
         const response = await fetch(`/api/admin/update-status/${complaintId}`, {
             method: 'POST',
             headers: {
@@ -550,7 +533,6 @@ function createCharts(analytics) {
         if (chart) chart.destroy();
     });
     
-    // Category Distribution Chart
     const categoryCtx = document.getElementById('categoryChart')?.getContext('2d');
     if (categoryCtx) {
         charts.category = new Chart(categoryCtx, {
@@ -582,7 +564,6 @@ function createCharts(analytics) {
         });
     }
     
-    // Monthly Trend Chart
     const trendCtx = document.getElementById('trendChart')?.getContext('2d');
     if (trendCtx) {
         charts.trend = new Chart(trendCtx, {
@@ -613,7 +594,6 @@ function createCharts(analytics) {
         });
     }
     
-    // Crime Ratio Pie Chart
     const ratioCtx = document.getElementById('ratioChart')?.getContext('2d');
     if (ratioCtx) {
         charts.ratio = new Chart(ratioCtx, {
@@ -639,7 +619,6 @@ function createCharts(analytics) {
         });
     }
     
-    // Status Distribution Chart
     const statusCtx = document.getElementById('statusChart')?.getContext('2d');
     if (statusCtx) {
         charts.status = new Chart(statusCtx, {
@@ -709,7 +688,6 @@ function logout() {
     window.location.href = '/auth?type=login';
 }
 
-// Auto refresh every 30 seconds
 setInterval(() => {
     if (currentAdmin) {
         loadDashboardData();

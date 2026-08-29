@@ -11,7 +11,6 @@
 </head>
 <body>
     <div class="admin-container">
-        <!-- Sidebar -->
         <aside class="admin-sidebar">
             <div class="sidebar-header">
                 <i class="fas fa-shield-alt"></i>
@@ -55,9 +54,7 @@
             </div>
         </aside>
         
-        <!-- Main Content -->
         <main class="admin-main">
-            <!-- Top Bar -->
             <header class="top-bar">
                 <div class="top-bar-left">
                     <button class="menu-toggle" onclick="toggleSidebar()">
@@ -84,7 +81,6 @@
                 </div>
             </header>
             
-            <!-- Overview Section -->
             <section id="overview-section" class="section active">
                 <div class="welcome-banner">
                     <div class="welcome-text">
@@ -94,7 +90,6 @@
                     <div class="date-display" id="current-date"></div>
                 </div>
                 
-                <!-- Stats Cards -->
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-icon" style="background: #e3f2fd; color: #1976d2;">
@@ -134,7 +129,6 @@
                     </div>
                 </div>
                 
-                <!-- Quick Actions -->
                 <div class="quick-actions">
                     <button class="action-btn" onclick="showSection('predict')">
                         <i class="fas fa-brain"></i>
@@ -151,7 +145,6 @@
                 </div>
             </section>
             
-            <!-- Complaints Section -->
             <section id="complaints-section" class="section">
                 <div class="section-header">
                     <h2>Complaints Management</h2>
@@ -178,13 +171,11 @@
                             </tr>
                         </thead>
                         <tbody id="complaints-body">
-                            <!-- Dynamically loaded -->
                         </tbody>
                     </table>
                 </div>
             </section>
             
-            <!-- Analytics Section -->
             <section id="analytics-section" class="section">
                 <div class="section-header">
                     <h2>Crime Analytics</h2>
@@ -215,7 +206,6 @@
                 </div>
             </section>
             
-            <!-- Predict Crime Section -->
             <section id="predict-section" class="section">
                 <div class="predict-container">
                     <div class="predict-form">
@@ -250,7 +240,6 @@
                 </div>
             </section>
             
-            <!-- Settings Section -->
             <section id="settings-section" class="section">
                 <h2>Admin Settings</h2>
                 <div class="settings-container">

@@ -1,4 +1,4 @@
-# main.py - Complete Smart City Crime Prediction Backend
+
 from fastapi import FastAPI, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -16,13 +16,11 @@ from collections import Counter, defaultdict
 import os
 import sys
 
-# For Render deployment - auto-train model if not exists
 if not os.path.exists('crime_model.pkl'):
     print("Training model...")
     os.system('python train_crime_model.py')
 app = FastAPI(title="Smart City Crime Prediction System")
 
-# CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -31,14 +29,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Database setup
 DB_PATH = "smart_city.db"
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # Users table
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -52,7 +48,6 @@ def init_db():
         )
     ''')
     
-    # Complaints table
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS complaints (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -67,7 +62,6 @@ def init_db():
         )
     ''')
     
-    # Tokens table for sessions
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS sessions (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -78,7 +72,6 @@ def init_db():
         )
     ''')
     
-    # Insert default admin accounts for each location
     admin_locations = ['north', 'south', 'east', 'west', 'central']
     for loc in admin_locations:
         cursor.execute("SELECT COUNT(*) FROM users WHERE email=?", (f"admin_{loc}@smartcity.com",))
@@ -94,7 +87,6 @@ def init_db():
 
 init_db()
 
-# Load crime model
 def load_model() -> Optional[Dict[str, Any]]:
     try:
         with open('crime_model.pkl', 'rb') as f:
@@ -106,8 +98,7 @@ def load_model() -> Optional[Dict[str, Any]]:
     except Exception as e:
         print(f"✗ Error loading model: {e}")
         print("Training new model...")
-    
-    # If model loading fails, train a new one
+   
     try:
         import subprocess
         subprocess.run(['python', 'train_crime_model.py'], check=True)
@@ -122,7 +113,6 @@ def load_model() -> Optional[Dict[str, Any]]:
 
 model_data = load_model()
 
-# Pydantic models
 class SignupRequest(BaseModel):
     email: str
     password: str
@@ -150,7 +140,6 @@ class StatusUpdateRequest(BaseModel):
     status: str
     location: Optional[str] = None
 
-# Helper functions
 def hash_password(password: str) -> str:
     return hashlib.sha256(password.encode()).hexdigest()
 
@@ -208,7 +197,6 @@ def predict_crime(complaint_text: str):
     
     return prediction, confidence
 
-# Routes for serving HTML
 @app.get("/")
 async def landing_page():
     return FileResponse("static/landing.html")
@@ -225,26 +213,22 @@ async def citizen_dashboard():
 async def admin_dashboard():
     return FileResponse("static/admin-dashboard.html")
 
-# Authentication routes
 @app.post("/api/signup")
 async def signup(request: SignupRequest):
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
     try:
-        # Check if user exists
         cursor.execute("SELECT COUNT(*) FROM users WHERE email=?", (request.email,))
         if cursor.fetchone()[0] > 0:
             raise HTTPException(status_code=400, detail="Email already registered")
         
-        # Insert new user
         password_hash = hash_password(request.password)
         cursor.execute('''
             INSERT INTO users (email, password, name, phone, role, location)
             VALUES (?, ?, ?, ?, ?, ?)
         ''', (request.email, password_hash, request.name, request.phone, request.role, request.location))
         
-        # Safely get user_id
         user_id = get_user_id_after_insert(cursor, request.email)
         
         if user_id == 0:
@@ -252,7 +236,6 @@ async def signup(request: SignupRequest):
         
         conn.commit()
         
-        # Create token
         token = create_token(user_id)
         
         return {
@@ -281,7 +264,6 @@ async def login(request: LoginRequest):
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # Check user credentials
     password_hash = hash_password(request.password)
     cursor.execute('''
         SELECT * FROM users 
@@ -294,12 +276,10 @@ async def login(request: LoginRequest):
     if not user:
         raise HTTPException(status_code=401, detail="Invalid credentials")
     
-    # For admin, verify location
     if request.role == 'admin':
         if user[6] != request.location:
             raise HTTPException(status_code=401, detail="Invalid location for this admin")
     
-    # Create token
     token = create_token(user[0])
     
     return {
@@ -315,16 +295,13 @@ async def login(request: LoginRequest):
         }
     }
 
-# Complaint routes
 @app.post("/api/submit-complaint")
 async def submit_complaint(request: ComplaintRequest):
     if not request.complaint_text.strip():
         raise HTTPException(status_code=400, detail="Complaint text cannot be empty")
     
-    # Predict crime category
     predicted_crime, confidence = predict_crime(request.complaint_text)
     
-    # Save to database
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
@@ -366,7 +343,6 @@ async def predict(request: PredictRequest):
         "confidence": confidence
     }
 
-# Citizen routes
 @app.get("/api/citizen/complaints")
 async def get_citizen_complaints(email: str):
     conn = sqlite3.connect(DB_PATH)
@@ -395,7 +371,6 @@ async def get_citizen_complaints(email: str):
         for c in complaints
     ]
 
-# Admin routes
 @app.get("/api/admin/complaints")
 async def get_admin_complaints(location: str):
     print(f"Fetching complaints for location: {location}")
@@ -403,12 +378,10 @@ async def get_admin_complaints(location: str):
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # First, check what locations exist
     cursor.execute('SELECT DISTINCT location FROM complaints')
     locations = cursor.fetchall()
     print(f"Available locations in DB: {locations}")
     
-    # Get complaints for specific location
     cursor.execute('''
         SELECT * FROM complaints 
         WHERE LOWER(location) = LOWER(?)
@@ -449,10 +422,8 @@ async def update_status(complaint_id: int, status: str):
     cursor = conn.cursor()
     
     try:
-        # Simple update query
         cursor.execute('UPDATE complaints SET status=? WHERE id=?', (status, complaint_id))
         
-        # Check if any row was updated
         if cursor.rowcount == 0:
             raise HTTPException(status_code=404, detail="Complaint not found")
         
@@ -507,7 +478,6 @@ async def get_analytics(location: str, period: str = "current"):
     complaints = cursor.fetchall()
     conn.close()
     
-    # Calculate analytics
     category_counts = Counter()
     status_counts = Counter()
     monthly_trends = defaultdict(int)
@@ -517,9 +487,8 @@ async def get_analytics(location: str, period: str = "current"):
         category_counts[category] += 1
         status_counts[c[7]] += 1
         
-        # Monthly trend
         if c[8]:
-            month = c[8][:7]  # YYYY-MM
+            month = c[8][:7]  
             monthly_trends[month] += 1
     
     categories = [
@@ -545,5 +514,4 @@ async def get_analytics(location: str, period: str = "current"):
         "total": len(complaints)
     }
 
-# Mount static files
 app.mount("/static", StaticFiles(directory="static"), name="static")

@@ -29,7 +29,6 @@ body {
     min-height: 100vh;
 }
 
-/* Left Side - Brand */
 .auth-left {
     flex: 1;
     background: linear-gradient(135deg, rgba(26, 35, 126, 0.95) 0%, rgba(40, 53, 147, 0.95) 100%);
@@ -98,7 +97,6 @@ body {
     opacity: 0.9;
 }
 
-/* Right Side - Form */
 .auth-right {
     flex: 1;
     background: white;
@@ -124,7 +122,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Tabs */
 .auth-tabs {
     display: flex;
     gap: 1rem;
@@ -152,7 +149,6 @@ body {
     color: white;
 }
 
-/* Form Groups */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -195,7 +191,6 @@ body {
     box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.1);
 }
 
-/* Auth Button */
 .auth-btn {
     width: 100%;
     padding: 1rem;
@@ -221,7 +216,6 @@ body {
     transform: translateY(0);
 }
 
-/* Switch Link */
 .auth-switch {
     text-align: center;
     margin-top: 1.5rem;
@@ -239,7 +233,6 @@ body {
     text-decoration: underline;
 }
 
-/* Error Message */
 .error-message {
     background: #fce4ec;
     color: #e91e63;
@@ -250,8 +243,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive */
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .auth-container {
         flex-direction: column;
@@ -304,7 +295,6 @@ body {
     }
 }
 
-/* Mobile Select Fix */
 @media (max-width: 768px) {
     select,
     #location {

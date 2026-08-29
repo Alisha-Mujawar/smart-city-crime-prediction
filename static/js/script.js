@@ -1,18 +1,14 @@
-// script.js
 const API_BASE_URL = window.location.origin;
 
-// Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
     createFeatureInputs();
     loadHistory();
 });
 
-// Create feature input fields
 function createFeatureInputs() {
     const featuresContainer = document.getElementById('features-input');
     featuresContainer.innerHTML = '';
     
-    // Create 10 feature inputs (adjust based on your model)
     for (let i = 0; i < 10; i++) {
         const featureDiv = document.createElement('div');
         featureDiv.className = 'feature-input';
@@ -24,12 +20,10 @@ function createFeatureInputs() {
     }
 }
 
-// Make prediction
 async function makePrediction() {
     const modelType = document.getElementById('model-type').value;
     const features = [];
     
-    // Collect feature values
     for (let i = 0; i < 10; i++) {
         const value = parseFloat(document.getElementById(`feature-${i}`).value);
         if (isNaN(value)) {
@@ -39,7 +33,6 @@ async function makePrediction() {
         features.push(value);
     }
     
-    // Show loading state
     const predictBtn = document.getElementById('predict-btn');
     predictBtn.disabled = true;
     predictBtn.innerHTML = '<span class="loading"></span> Predicting...';
@@ -62,7 +55,7 @@ async function makePrediction() {
         
         const result = await response.json();
         displayPrediction(result);
-        loadHistory(); // Refresh history
+        loadHistory(); 
         
     } catch (error) {
         alert('Error making prediction: ' + error.message);
@@ -72,7 +65,6 @@ async function makePrediction() {
     }
 }
 
-// Display prediction result
 function displayPrediction(result) {
     const resultContainer = document.getElementById('prediction-result');
     const predictionClass = result.prediction === 1 ? 'prediction-positive' : 'prediction-negative';
@@ -93,7 +85,6 @@ function displayPrediction(result) {
     `;
 }
 
-// Load prediction history
 async function loadHistory() {
     try {
         const response = await fetch(`${API_BASE_URL}/history?limit=10`);
@@ -118,5 +109,4 @@ async function loadHistory() {
     }
 }
 
-// Refresh history every 30 seconds
 setInterval(loadHistory, 30000);
